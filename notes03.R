@@ -1,10 +1,18 @@
 # Notes 3 Code
 
+# Set our working directory to the source file location
+### Session --> Set Working Directory --> To Source File Location
+
 # Example reading in csv data
 # Import Dataset --> From text (readr)
 
 library(readr)
-bridges <- read_csv("NC Bridges.csv")
+NC_Bridges <- read_csv("NC Bridges.csv")
+
+# Example where we add missing values for the last two columns
+
+library(readr)
+NC_Bridges <- read_csv("NC Bridges.csv", na = "Not Posted")
 
 
 # Example reading in Excel data
@@ -66,3 +74,31 @@ bad_alam_bridges <- NC_Bridges %>%
 bad_alam_bridges <- NC_Bridges %>%
   filter(COUNTY == "ALAMANCE", 
          STRUCTURALLYDEFICIENT == "SD" | FUNCTIONALLYOBSOLETE == "FO")
+
+
+# Use select() to update alam_bridges to only include ROUTE, ACROSS, YEARBUILT,
+#   and SR
+
+alam_bridges <- select(alam_bridges, ROUTE, ACROSS, YEARBUILT, SR)
+
+# Or with piping...
+
+alam_bridges <- alam_bridges %>% 
+  select(ROUTE, ACROSS, YEARBUILT, SR)
+
+
+# mutate() example
+
+mycars <- mutate(mtcars, wt_lbs = wt * 1000)
+
+select(mycars, wt, wt_lbs)
+
+
+# Practice: Using the NC Bridges data, create a new variable called AGE 
+#   that takes 2024 minus YEARBUILT. 
+#   Then print the year built and age for the last 10 bridges in the data.
+
+NC_Bridges <- mutate(NC_Bridges, AGE = 2024 - YEARBUILT)
+
+select(NC_Bridges, YEARBUILT, AGE) %>%
+  tail(n = 10)
