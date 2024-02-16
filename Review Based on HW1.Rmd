@@ -1,0 +1,129 @@
+---
+title: "Review Based on Homework 1"
+author: "STS 2300 (Spring 2024) - Dr. VanKrevelen"
+date: '02/16/2024'
+output:
+  html_document:
+    number_sections: yes
+    toc: yes
+  word_document:
+    toc: yes
+  pdf_document:
+    toc: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+---
+
+These topics are based on your responses to the reflection questions at the end of Homework #1.
+
+# Distinguishing Terms
+
+Our textbook also includes explanations of many of these (and other) terms [here](https://moderndive.com/1-getting-started.html#programming-concepts).
+
+<br>
+
+**Functions**: Functions are used to perform tasks. They can be identified in code by the parentheses attached to them. They usually require some sort of input (e.g. a vector or a data frame) and often produce some kind of output.
+
+<br>
+
+**Arguments**: Arguments are the inputs to the function. They usually have names that we can use to specify our own values for the argument. In many cases, there are *default arguments* that will be used if we don't specify them. 
+  - For example, the `head()` function requires us to input a vector or data frame. We can then use the `n` argument to specify how many observations we want to see. The default argument (if we don't specify n) is 6.
+  - The `mean()` function requires we input a vector. There is a `trim` argument that we could use if we wanted a certain proportion of the data to be excluded. The default value is 0 (exclude no data). If I put `trim = 0.1`, it would remove the top 10% and bottom 10% of my values before calculating the mean.
+
+<br>
+
+**Operators**: These are kind of like functions but instead of using parentheses, the perform some task on objects on either side of them.
+
+  - The `<-` operator takes whatever we do on the right and stores it in an object with the name that we put on the left.
+  - The `$` operator isolates the column on the right from the data frame on the right.
+  - The `%>%` operator takes the result of our code on the left and puts it into the first argument of the function on the right.
+  - Mathematical symbols like `+`, `-`, `*`, and `/` are also operators.
+  - So are [logical operators](https://moderndive.com/3-wrangling.html#filter) like `<`, `>`, `==`, and `!=` that are used to compare two scalars or vectors.
+
+<br>
+
+**Objects**: There are many different types of objects. These may be built into R or they may be things we create that go into our environment section. We can create (or edit) objects by using the assignment operator (`<-`).
+
+  - **scalars**: Scalars contain a single number, character element, or logical value. Examples are 7, "elon university", or TRUE.
+  - **vectors**: Vectors are a series of elements that are all the same type (e.g. numbers). We can create our own vectors using the `c()` function. We can use the `$` operator to reference a column vector within a data frame.
+  - **matrices**: We won't encounter matrices in this class, but they are made up of multiple vectors that are all the same type (e.g. character) and length.
+  - **data frames**: Data frames are made up of multiple vectors of the same length (but not necessarily the same type). These are usually referred to as data sets outside the context of R. Examples we have worked with in class are `mtcars`, `mario_kart_auction`, and `MA_schools` 
+    - rows vs. columns: Typically the columns in a data frame will represent variables and the rows will represent observations. For example, in `mtcars` each row represents a type of car and each column gives us information about that car. In `MA_schools`, each row represents a school, and each column gives us information about that school.
+
+You can think of:
+
+  - scalars like a point on a graph
+  - vectors like a line on a graph
+  - matrices and data frames like a rectangle on a graph
+<br>
+
+When R sees a word:
+  - by itself -- it assumes it is an object
+  - followed by () -- it assumes it is a function
+  - in quotes "" or '' -- it assumes it is a character element
+
+---
+
+# The c() function and when to use it
+
+The `c()` function is used to combine multiple scalars (or smaller vectors) of a single type into one vector.
+
+```{r}
+# Creating a numeric vector
+
+c(5, 10, 15, 500)
+
+# Creating a character vector
+
+c("one", "two", "soccer", "statistics", "elon university")
+
+# Creating a logical vector
+
+c(TRUE, FALSE, FALSE, TRUE)
+```
+
+<br>
+
+---
+
+# Using summarize() with and without groups (and what n() is doing)
+
+When we use [the `summarize()` function](https://moderndive.com/3-wrangling.html#summarize) the first argument is a data frame (either one we type or pipe into it). After that, we can include one or multiple arguments in which we give a name followed by `=` and code to calculate a summary statistic. If we want separate summaries for different groups, we add a `.by` argument followed by the name of the variable that contains the groups. For summaries by multiple variables, use `c()` to put the variable names into a vector.
+
+```{r}
+# Examples
+
+```
+
+
+<br>
+
+---
+
+# More practice with piping (%>%)
+
+```{r}
+
+```
+
+
+<br>
+
+---
+
+# Revisiting kableExtra
+
+Our [`kableExtra` reference](https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html) for this class.
+
+The main thing to know about the `kableExtra` package is that your code will look something like
+
+```{r, eval = FALSE}
+kbl(________) %>%
+  kable_xxxx(________)
+```
+
+where a data frame goes inside `kbl()` (or is piped into it), `xxxx` is replaced by something like classic, material, or paper, and optional arguments are added inside the `kable_xxxx()` function to customize the table. Most of the `kable_xxxx()` functions have the same arguments, so you can play around with which ones you like best.
