@@ -31,6 +31,7 @@ Our textbook also includes explanations of many of these (and other) terms [here
 <br>
 
 **Arguments**: Arguments are the inputs to the function. They usually have names that we can use to specify our own values for the argument. In many cases, there are *default arguments* that will be used if we don't specify them. 
+
   - For example, the `head()` function requires us to input a vector or data frame. We can then use the `n` argument to specify how many observations we want to see. The default argument (if we don't specify n) is 6.
   - The `mean()` function requires we input a vector. There is a `trim` argument that we could use if we wanted a certain proportion of the data to be excluded. The default value is 0 (exclude no data). If I put `trim = 0.1`, it would remove the top 10% and bottom 10% of my values before calculating the mean.
 
@@ -39,7 +40,7 @@ Our textbook also includes explanations of many of these (and other) terms [here
 **Operators**: These are kind of like functions but instead of using parentheses, the perform some task on objects on either side of them.
 
   - The `<-` operator takes whatever we do on the right and stores it in an object with the name that we put on the left.
-  - The `$` operator isolates the column on the right from the data frame on the right.
+  - The `$` operator isolates the column on the right from the data frame on the left
   - The `%>%` operator takes the result of our code on the left and puts it into the first argument of the function on the right.
   - Mathematical symbols like `+`, `-`, `*`, and `/` are also operators.
   - So are [logical operators](https://moderndive.com/3-wrangling.html#filter) like `<`, `>`, `==`, and `!=` that are used to compare two scalars or vectors.
@@ -62,6 +63,7 @@ You can think of:
 <br>
 
 When R sees a word:
+
   - by itself -- it assumes it is an object
   - followed by () -- it assumes it is a function
   - in quotes "" or '' -- it assumes it is a character element
@@ -96,7 +98,31 @@ When we use [the `summarize()` function](https://moderndive.com/3-wrangling.html
 
 ```{r}
 # Examples
+library(moderndive)
+library(dplyr)
 
+summarize(MA_schools,
+          avg_disadvantaged = mean(perc_disadvan),
+          max_disadvantaged = max(perc_disadvan),
+          min_disadvantaged = min(perc_disadvan))
+
+summarize(MA_schools,
+          avg_disadvantaged = mean(perc_disadvan),
+          max_disadvantaged = max(perc_disadvan),
+          min_disadvantaged = min(perc_disadvan),
+          .by = size)
+
+# I'm going to create a variable called above_avg_math
+
+schools <- mutate(MA_schools,
+       above_avg_math = (average_sat_math > 507.1))
+tail(schools)
+
+summarize(schools,
+          avg_disadvantaged = mean(perc_disadvan),
+          max_disadvantaged = max(perc_disadvan),
+          min_disadvantaged = min(perc_disadvan),
+          .by = c(size, above_avg_math))
 ```
 
 
@@ -106,8 +132,15 @@ When we use [the `summarize()` function](https://moderndive.com/3-wrangling.html
 
 # More practice with piping (%>%)
 
-```{r}
+The pipe operator can be read as the words "and then." It takes the results of your code on the left and puts them into the first argument of your code on the right.
 
+```{r}
+mean_wt_by_cyl <- mtcars %>%
+  filter(am == 0) %>%
+  mutate(wt_lbs = 1000 * wt) %>%
+  summarize(mean_wt = mean(wt_lbs), .by = cyl) %>%
+  arrange(cyl)
+mean_wt_by_cyl
 ```
 
 
@@ -127,3 +160,19 @@ kbl(________) %>%
 ```
 
 where a data frame goes inside `kbl()` (or is piped into it), `xxxx` is replaced by something like classic, material, or paper, and optional arguments are added inside the `kable_xxxx()` function to customize the table. Most of the `kable_xxxx()` functions have the same arguments, so you can play around with which ones you like best.
+
+```{r}
+library(kableExtra)
+school_summary <- summarize(schools,
+          avg_disadvantaged = mean(perc_disadvan),
+          max_disadvantaged = max(perc_disadvan),
+          min_disadvantaged = min(perc_disadvan),
+          .by = c(size, above_avg_math))
+
+kbl(school_summary) %>%
+  kable_classic_2("hover")
+
+kbl(school_summary) %>%
+  kable_classic_2(full_width = F, position = "right", "striped")
+```
+
