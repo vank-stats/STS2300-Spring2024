@@ -102,3 +102,30 @@ NC_Bridges <- mutate(NC_Bridges, AGE = 2024 - YEARBUILT)
 
 select(NC_Bridges, YEARBUILT, AGE) %>%
   tail(n = 10)
+
+
+
+
+# Long vs. wide data
+
+# Bird nests
+
+birds_wide <- read.csv("https://raw.githubusercontent.com/vank-stats/STS2300-Spring2024/main/data/nestbox_lands_wide.csv")
+birds_long <- read.csv("https://raw.githubusercontent.com/vank-stats/STS2300-Spring2024/main/data/nestbox_lands_long.csv")
+
+birds_wide
+
+
+library(tidyr)
+
+new_birds_long <- birds_wide %>%
+  pivot_longer(cols = X2012:X2023, 
+               names_to = "Year", 
+               values_to = "Fledged") 
+
+
+
+new_birds_wide <- birds_long %>%
+  pivot_wider(names_from = Year, 
+              values_from = Fledged)
+
