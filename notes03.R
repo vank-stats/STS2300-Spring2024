@@ -1,7 +1,11 @@
 # Notes 3 Code
 
+# Importing data into R
+
+
 # Set our working directory to the source file location
 ### Session --> Set Working Directory --> To Source File Location
+
 
 # Example reading in csv data
 # Import Dataset --> From text (readr)
@@ -9,10 +13,12 @@
 library(readr)
 NC_Bridges <- read_csv("NC Bridges.csv")
 
+
 # Example where we add missing values for the last two columns
 
 library(readr)
-NC_Bridges <- read_csv("NC Bridges.csv", na = "Not Posted")
+NC_Bridges <- read_csv("NC Bridges.csv", 
+                       na = "Not Posted")
 
 
 # Example reading in Excel data
@@ -27,6 +33,9 @@ majors <- read_excel("MTH_STS_Majors.xlsx")
 
 library(dplyr)
 
+
+# Using filter()
+
 auto <- filter(mtcars, am == 0)
 
 # Version using piping (does the same thing as above)
@@ -34,6 +43,8 @@ auto <- filter(mtcars, am == 0)
 auto <- mtcars %>%
   filter(am == 0)
 
+
+# Practice
 
 # Create a subset of our NC Bridges data that only includes bridges 
 # from Alamance County (call it alam_bridges)
@@ -66,14 +77,17 @@ bad_alam_bridges <- alam_bridges %>%
   filter(STRUCTURALLYDEFICIENT == "SD" | FUNCTIONALLYOBSOLETE == "FO")
 
 # Equivalent code
+
 bad_alam_bridges <- NC_Bridges %>%
   filter(COUNTY == "ALAMANCE") %>%
   filter(STRUCTURALLYDEFICIENT == "SD" | FUNCTIONALLYOBSOLETE == "FO")
 
 # Equivalent code
+
 bad_alam_bridges <- NC_Bridges %>%
   filter(COUNTY == "ALAMANCE", 
          STRUCTURALLYDEFICIENT == "SD" | FUNCTIONALLYOBSOLETE == "FO")
+
 
 
 # Use select() to update alam_bridges to only include ROUTE, ACROSS, YEARBUILT,
@@ -87,9 +101,12 @@ alam_bridges <- alam_bridges %>%
   select(ROUTE, ACROSS, YEARBUILT, SR)
 
 
+
 # mutate() example
 
 mycars <- mutate(mtcars, wt_lbs = wt * 1000)
+
+# Check that it worked
 
 select(mycars, wt, wt_lbs)
 
@@ -108,15 +125,18 @@ select(NC_Bridges, YEARBUILT, AGE) %>%
 
 # Long vs. wide data
 
-# Bird nests
+# Read in examples of wide and long data
 
 birds_wide <- read.csv("https://raw.githubusercontent.com/vank-stats/STS2300-Spring2024/main/data/nestbox_lands_wide.csv")
 birds_long <- read.csv("https://raw.githubusercontent.com/vank-stats/STS2300-Spring2024/main/data/nestbox_lands_long.csv")
 
-birds_wide
 
+# Load tidyr package for pivot_longer() and pivot_wider() functions
 
 library(tidyr)
+
+
+# Convert wide data to long data
 
 new_birds_long <- birds_wide %>%
   pivot_longer(cols = X2012:X2023, 
@@ -124,6 +144,7 @@ new_birds_long <- birds_wide %>%
                values_to = "Fledged") 
 
 
+# Convert long data to wide data
 
 new_birds_wide <- birds_long %>%
   pivot_wider(names_from = Year, 
