@@ -12,12 +12,12 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-```{r}
+```{r, message = FALSE}
 # Load required packages here - change options to remove messages
 
 library(dplyr)
 library(rvest) # You may need to install this one first
-library(stringr)
+library(stringr) # This was added on question 5
 ```
 
 
@@ -94,7 +94,8 @@ hugo_noms <- mutate(hugo_noms,
 6. Create a new object called `hugo_winners` that only includes the books that won the award.
 
 ```{r}
-
+hugo_winners <- hugo_noms %>%
+  filter(Winner)
 ```
 
 <br>
@@ -111,9 +112,9 @@ hugo_authors <- hugo_noms %>%
 head(hugo_authors, n = 10)
 ```
 
-**Most nominations:**
+**Most nominations:** Robert A. Heinlein and Lois McMaster Bujold
 
-**Most nominations without winning:**
+**Most nominations without winning:** Robert Silverberg
 
 <br>
 
@@ -129,7 +130,19 @@ head(hugo_authors, n = 10)
   - Sort the list in descending order by number of nominations
   
 ```{r}
+hugo_summary <- hugo_award %>%
+  purrr::pluck(2) %>%
+  html_table() %>%
+  rename(Author = `Author(s)`) %>%
+  select(Year, Author, Novel) %>%
+  mutate(Winner = str_detect(Author, "\\*"),
+         Author = str_remove(Author, "\\*")) %>%
+  summarize(Nominations = n(),
+            Wins = sum(Winner),
+            .by = Author) %>%
+  arrange(desc(Nominations))
 
+head(hugo_summary, n = 10)
 ```
 
 
@@ -138,5 +151,20 @@ head(hugo_authors, n = 10)
 9. (Bonus) The [Nebula Award](https://en.wikipedia.org/wiki/Nebula_Award_for_Best_Novel) is another award for best science fiction / fantasy novel. The Wikipedia page is set up very similarly. Take your code from the previous question, replace the URL, and see if you can get a table of authors who have been nominated for the Nebula Award. (Note: Notice that the author column is already called Author on this page, so you won't need to rename it.)
 
 ```{r}
+nebula_award <- "https://en.wikipedia.org/wiki/Nebula_Award_for_Best_Novel" %>%
+  read_html() %>%
+  html_nodes("table")
 
+nebula_summary <- nebula_award %>%
+  purrr::pluck(2) %>%
+  html_table() %>%
+  select(Year, Author, Novel) %>%
+  mutate(Winner = str_detect(Author, "\\*"),
+         Author = str_remove(Author, "\\*")) %>%
+  summarize(Nominations = n(),
+            Wins = sum(Winner),
+            .by = Author) %>%
+  arrange(desc(Nominations))
+
+head(nebula_summary, n = 10)
 ```
