@@ -1,0 +1,171 @@
+---
+title: "Homework 1 (50 points total)"
+author: "Solutions"
+date: 'Due: 02/14/2024'
+output:
+  pdf_document: default
+  word_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Use the code chunk below to load any R libraries that you use in your script. I've added `dplyr` as a start.
+
+```{r, message = FALSE, warning = FALSE}
+library(dplyr)
+library(moderndive) # added for question 1
+library(kableExtra) # added for question 8
+```
+
+<br>
+
+# Part 1 - Mario Kart Example
+
+1. (4 points) Install the `moderndive` package on your computer if you haven't done so yet. Then add code above to load the package in this document. Explain below why we do not want to include the code to install the package in this document.
+
+**Answer:** We will only need to install the package one time. If we put the code to install it in this document, it would be re-installed every time we hit the Knit button.
+
+<br>
+
+
+
+2. (5 points) Write code below to bring up the help menu for the `mario_kart_auction` data set from the `moderndive` package. Then tell me how many observations are in the data and give an example of at least one quantitative variable and at least one categorical variable.
+
+```{r}
+# Put your code below to bring up the help menu
+?mario_kart_auction
+```
+
+**Number of observations:** 143
+
+**Quantitative variable(s):** Many possible answers. Some include duration, n_bids, start_pr, ship_pr, etc.
+
+**Categorical variable(s):** Possible options include id, cond, ship_sp, stock_photo, or title
+
+<br>
+
+
+
+3. (4 points) Use a function to display the number of games that are new vs. used. Then add another line of code that displays the proportion of games that are new vs. used.
+
+```{r}
+# Put your code below to explore the data
+table(mario_kart_auction$cond)
+prop.table(table(mario_kart_auction$cond))
+```
+
+<br>
+
+
+
+4. (7 points) Write code that creates an object called `mario_sample` that includes just the first 15 observations in the data. Add another line of code that prints only the overall auction price (`total_pr`) for those 15 observations. In your answer below, use in-line R code (Hint: we did this in activity 2) to tell someone the highest overall price among your sample of 15 auctions.
+
+```{r}
+# Put your code below
+mario_sample <- head(mario_kart_auction, n = 15)
+mario_sample$total_pr
+```
+
+**Sentence with in-line R code:** The highest overall price among my sample of 15 auctions is `r max(mario_sample$total_pr)` dollars
+
+<br>
+
+
+
+5. (4 points) In the previous question, what type of object is `mario_sample`? What type of object is the 15 overall auction prices?
+
+**Answer:** `mario_sample` is a data frame. The object containing the 15 overall auction prices is a (numeric) vector.
+
+<br>
+
+
+
+6. (6 points) Create a data frame called `mario_summary` that summarizes the data by calculating the following:
+
+  - number of auctions (called `auctions`)
+  - mean shipping price (called `avg_ship`)
+  - longest duration (called `max_length`)
+  - standard deviation of number of bids (called `sd_bids`)
+
+```{r}
+# Put your code below
+mario_summary <- summarize(mario_kart_auction,
+                           auctions = n(),
+                           avg_ship = mean(ship_pr),
+                           max_length = max(duration),
+                           sd_bids = sd(n_bids))
+mario_summary
+```
+
+<br>
+
+
+
+7. (4 points) Take your code from the previous question and make it so that a separate summary is calculated for new games and for used games. In other words, your `mario_summary` data frame will now have two rows (new and used). Is there more variation for number of bids among new games or used games?
+
+```{r}
+# Put your code below
+mario_summary <- summarize(mario_kart_auction,
+                           auctions = n(),
+                           avg_ship = mean(ship_pr),
+                           max_length = max(duration),
+                           sd_bids = sd(n_bids),
+                           .by = cond)
+mario_summary
+```
+
+**Answer:** New games have a higher standard deviation in the number of bids, so there is more variation among them.
+
+<br>
+
+
+
+8. (6 points) Take your `mario_summary` object and display it below using the `kableExtra` package to format it nicely for this document. Add an option to this code chunk so that your code is **not** displayed in the knitted document. (Note: You should also add code at the top of the document to load `kableExtra` where other packages are loaded.)
+
+```{r, echo = FALSE}
+# Put your code below - there are multiple kable_xxxx() functions you could use
+mario_summary %>%
+  kbl() %>%
+  kable_classic_2()
+```
+
+<br>
+
+
+
+# Part 2 - Miscellaneous
+
+The questions in this section do not directly apply to previous
+
+9. (4 points) Is each of the following an argument, function, object, or operator? Put your answer after the colon for each piece of code.
+
+  - `c()`: This is a **function** (notice the parentheses)
+  - `$`: This is an **operator**
+  - the `n` in `head(__, n = __)`: n is an **argument** within the head() function
+  - `mario_kart_auction$n_bids`: This will be a **vector**
+
+<br>
+
+
+
+10. (3 points) Write code to create a vector called `spring_24` that includes the courses you're taking this semester (e.g. STS2300).
+
+```{r}
+# Put your code below - Answers will vary but will look similar
+
+spring_24 <- c("STS2300", "ENG1100", "MTH1510", "HST1230")
+```
+
+<br>
+
+
+
+11. (3 points) Answer one (or both) of the following questions. Your answer should be at least 3 - 4 sentences long and demonstrate some level of reflection (i.e. not just a few words). Be sure to answer the full question as well.
+
+  - What's something from Notes 1 - 2 that isn't entirely clear to you *and* what do you think would help to solidify this concept for you? Be specific.
+  - What's something that was surprising to you as you first learned about R in this class (or built on your previous R knowledge)? What made it surprising?
+  
+**Answer:** Answers will vary
