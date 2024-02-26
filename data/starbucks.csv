@@ -1,0 +1,1096 @@
+"product_name","size","milk_type","with_whip","calories","total_fat_g","cholesterol_mg","sodium_mg","total_carbs_g","sugar_g","caffeine_mg"
+"brewed coffee - dark roast","short","None","No",3,0.1,0,5,0,0,130
+"brewed coffee - dark roast","tall","None","No",4,0.1,0,10,0,0,193
+"brewed coffee - dark roast","grande","None","No",5,0.1,0,10,0,0,260
+"brewed coffee - dark roast","venti","None","No",5,0.1,0,10,0,0,340
+"brewed coffee - decaf pike place roast","short","None","No",3,0.1,0,5,0,0,15
+"brewed coffee - decaf pike place roast","tall","None","No",4,0.1,0,10,0,0,20
+"brewed coffee - decaf pike place roast","grande","None","No",5,0.1,0,10,0,0,25
+"brewed coffee - decaf pike place roast","venti","None","No",5,0.1,0,10,0,0,30
+"brewed coffee - medium roast","short","None","No",3,0.1,0,5,0,0,155
+"brewed coffee - medium roast","tall","None","No",4,0.1,0,5,0,0,235
+"brewed coffee - medium roast","grande","None","No",5,0.1,0,5,0,0,310
+"brewed coffee - medium roast","venti","None","No",5,0.1,0,5,0,0,410
+"brewed coffee - True North Blend Blonde roast","short","None","No",3,0.1,0,5,0,0,180
+"brewed coffee - True North Blend Blonde roast","tall","None","No",4,0.1,0,5,0,0,270
+"brewed coffee - True North Blend Blonde roast","grande","None","No",5,0.1,0,5,0,0,360
+"brewed coffee - True North Blend Blonde roast","venti","None","No",5,0.1,0,5,0,0,475
+"Caffè Misto","short","Nonfat","No",35,0.1,0,45,5,5,75
+"Caffè Misto","short","2%","No",50,2,10,50,5,5,75
+"Caffè Misto","short","Whole","No",70,3.5,10,50,5,5,75
+"Caffè Misto","short","Soy","No",40,1.5,0,40,3,2,75
+"Caffè Misto","short","Coconut","No",40,2.5,0,45,4,3,75
+"Caffè Misto","tall","Nonfat","No",60,0.2,5,70,8,8,115
+"Caffè Misto","tall","2%","No",80,3,15,80,8,8,115
+"Caffè Misto","tall","Whole","No",100,5,15,70,8,8,115
+"Caffè Misto","tall","Soy","No",60,2.5,0,60,5,4,115
+"Caffè Misto","tall","Coconut","No",60,3.5,0,70,6,5,115
+"Caffè Misto","grande","Nonfat","No",70,0.2,5,90,10,10,150
+"Caffè Misto","grande","2%","No",110,4,15,100,10,10,150
+"Caffè Misto","grande","Whole","No",130,7,20,95,10,10,150
+"Caffè Misto","grande","Soy","No",80,3,0,80,6,5,150
+"Caffè Misto","grande","Coconut","No",70,4.5,0,90,7,7,150
+"Caffè Misto","venti","Nonfat","No",90,0.3,5,115,13,13,195
+"Caffè Misto","venti","2%","No",130,5,20,130,13,13,195
+"Caffè Misto","venti","Whole","No",160,9,25,120,13,13,195
+"Caffè Misto","venti","Soy","No",100,4,0,100,8,6,195
+"Caffè Misto","venti","Coconut","No",80,5,0,90,7,7,195
+"Clover Brewed Coffee - Dark Roast","short","None","No",10,0,0,5,0,0,190
+"Clover Brewed Coffee - Dark Roast","tall","None","No",10,0,0,10,0,0,280
+"Clover Brewed Coffee - Dark Roast","grande","None","No",10,0,0,10,0,0,380
+"Clover Brewed Coffee - Dark Roast","venti","None","No",10,0,0,10,0,0,470
+"Clover Brewed Coffee -  Light Roast","short","None","No",10,0,0,5,0,0,155
+"Clover Brewed Coffee -  Light Roast","tall","None","No",10,0,0,10,0,0,255
+"Clover Brewed Coffee -  Light Roast","grande","None","No",10,0,0,10,0,0,340
+"Clover Brewed Coffee -  Light Roast","venti","None","No",10,0,0,10,0,0,425
+"Clover Brewed Coffee - Medium Roast","short","None","No",10,0,0,5,0,0,170
+"Clover Brewed Coffee - Medium Roast","tall","None","No",10,0,0,10,0,0,280
+"Clover Brewed Coffee - Medium Roast","grande","None","No",10,0,0,10,0,0,375
+"Clover Brewed Coffee - Medium Roast","venti","None","No",10,0,0,10,0,0,445
+"Iced Coffee","tall","None","No",60,0,0,10,15,15,120
+"Iced Coffee","grande","None","No",80,0.1,0,10,20,20,165
+"Iced Coffee","venti","None","No",120,0.1,0,15,30,30,235
+"Iced Coffee with milk","tall","Nonfat","No",80,0.1,0,30,17,17,90
+"Iced Coffee with milk","tall","2%","No",80,1,5,30,17,17,90
+"Iced Coffee with milk","tall","Whole","No",90,1.5,5,30,17,17,90
+"Iced Coffee with milk","tall","Soy","No",80,1,0,25,16,16,90
+"Iced Coffee with milk","tall","Coconut","No",80,1,0,25,17,16,110
+"Iced Coffee with milk","grande","Nonfat","No",100,0.1,0,35,23,23,125
+"Iced Coffee with milk","grande","2%","No",110,1.5,5,40,23,23,125
+"Iced Coffee with milk","grande","Whole","No",120,2,5,35,23,23,125
+"Iced Coffee with milk","grande","Soy","No",110,1,0,35,22,21,125
+"Iced Coffee with milk","grande","Coconut","No",100,1.5,0,35,22,22,150
+"Iced Coffee with milk","venti","Nonfat","No",160,0.1,0,60,35,35,170
+"Iced Coffee with milk","venti","2%","No",170,2,10,65,35,35,170
+"Iced Coffee with milk","venti","Whole","No",190,3.5,10,60,35,35,170
+"Iced Coffee with milk","venti","Soy","No",160,1.5,0,55,33,32,170
+"Iced Coffee with milk","venti","Coconut","No",160,2.5,0,55,33,33,205
+"Cold Brewed Coffee","tall","None","No",2,0,0,10,0,0,150
+"Cold Brewed Coffee","grande","None","No",3,0,0,15,0,0,200
+"Cold Brewed Coffee","venti","None","No",4,0,0,20,0,0,300
+"Vanilla Sweet Cream Cold Brew","tall","None","No",100,6,20,20,12,12,140
+"Vanilla Sweet Cream Cold Brew","grande","None","No",110,6,20,25,14,14,185
+"Vanilla Sweet Cream Cold Brew","venti","None","No",200,11,40,40,24,24,275
+"Espresso - Caffè Americano","short","None","No",5,0,0,5,1,0,75
+"Espresso - Caffè Americano","tall","None","No",10,0,0,10,1,0,150
+"Espresso - Caffè Americano","grande","None","No",15,0,0,15,1,0,225
+"Espresso - Caffè Americano","venti","None","No",25,0,0,10,1,0,300
+"Espresso - Iced Caffè Americano","tall","None","No",10,0,0,10,2,0,150
+"Espresso - Iced Caffè Americano","grande","None","No",15,0,0,15,3,0,225
+"Espresso - Iced Caffè Americano","venti","None","No",25,0,0,20,3,0,300
+"Caffè Latte","tall","Nonfat","No",100,0.2,5,120,15,14,75
+"Caffè Latte","tall","2%","No",150,6,25,135,15,14,75
+"Caffè Latte","tall","Whole","No",180,9,30,125,15,14,75
+"Caffè Latte","tall","Soy","No",110,4.5,0,105,10,6,75
+"Caffè Latte","tall","Coconut","No",110,7,0,120,11,10,75
+"Caffè Latte","grande","Nonfat","No",130,0.3,5,150,19,18,150
+"Caffè Latte","grande","2%","No",190,7,30,170,19,17,150
+"Caffè Latte","grande","Whole","No",230,11,35,150,19,17,150
+"Caffè Latte","grande","Soy","No",150,5,0,130,13,8,150
+"Caffè Latte","grande","Coconut","No",140,8,0,150,14,12,150
+"Caffè Latte","venti","Nonfat","No",170,0.4,10,190,25,23,150
+"Caffè Latte","venti","2%","No",240,9,35,220,24,22,150
+"Caffè Latte","venti","Whole","No",290,15,45,200,24,22,150
+"Caffè Latte","venti","Soy","No",190,7,0,170,16,11,150
+"Caffè Latte","venti","Coconut","No",170,11,0,200,18,16,150
+"Iced Caffè Latte","tall","Nonfat","No",70,0.1,5,80,10,9,75
+"Iced Caffè Latte","tall","2%","No",100,3.5,15,90,10,9,75
+"Iced Caffè Latte","tall","Whole","No",120,6,20,85,10,9,75
+"Iced Caffè Latte","tall","Soy","No",80,3,0,75,7,4,75
+"Iced Caffè Latte","tall","Coconut","No",70,4,0,80,7,6,75
+"Iced Caffè Latte","grande","Nonfat","No",90,0.2,5,105,13,11,150
+"Iced Caffè Latte","grande","2%","No",130,4.5,20,115,13,11,150
+"Iced Caffè Latte","grande","Whole","No",150,7,25,105,13,11,150
+"Iced Caffè Latte","grande","Soy","No",100,3.5,0,95,9,5,150
+"Iced Caffè Latte","grande","Coconut","No",90,5,0,105,10,8,150
+"Iced Caffè Latte","venti","Nonfat","No",130,0.3,5,140,19,16,225
+"Iced Caffè Latte","venti","2%","No",180,6,25,160,18,15,225
+"Iced Caffè Latte","venti","Whole","No",210,10,30,150,18,15,225
+"Iced Caffè Latte","venti","Soy","No",150,5,0,130,13,8,225
+"Iced Caffè Latte","venti","Coconut","No",130,7,0,150,14,11,225
+"Caffè Mocha","short","Nonfat","No",120,1.5,5,65,21,17,90
+"Caffè Mocha","short","Nonfat","Yes",180,6,20,70,23,18,90
+"Caffè Mocha","short","2%","No",150,4,10,70,21,17,90
+"Caffè Mocha","short","2%","Yes",200,9,30,75,22,18,90
+"Caffè Mocha","short","Whole","No",160,6,15,65,21,17,90
+"Caffè Mocha","short","Whole","Yes",210,11,35,70,22,18,90
+"Caffè Mocha","short","Soy","No",130,3.5,0,55,18,13,90
+"Caffè Mocha","short","Soy","Yes",180,9,20,60,20,14,90
+"Caffè Mocha","short","Coconut","No",130,4.5,0,65,19,15,90
+"Caffè Mocha","short","Coconut","Yes",180,10,20,70,21,16,90
+"Caffè Mocha","tall","Nonfat","No",190,2,5,100,32,27,95
+"Caffè Mocha","tall","Nonfat","Yes",250,8,25,110,34,28,95
+"Caffè Mocha","tall","2%","No",230,6,20,115,32,26,95
+"Caffè Mocha","tall","2%","Yes",290,13,40,120,34,28,95
+"Caffè Mocha","tall","Whole","No",250,9,25,105,32,26,95
+"Caffè Mocha","tall","Whole","Yes",310,16,45,110,34,28,95
+"Caffè Mocha","tall","Soy","No",200,5,0,90,28,20,95
+"Caffè Mocha","tall","Soy","No",260,11,25,95,30,22,95
+"Caffè Mocha","tall","Coconut","No",190,7,0,105,29,23,95
+"Caffè Mocha","tall","Coconut","Yes",250,13,25,110,30,25,95
+"Caffè Mocha","grande","Nonfat","No",250,2.5,5,125,42,34,175
+"Caffè Mocha","grande","Nonfat","Yes",320,10,30,135,44,36,175
+"Caffè Mocha","grande","2%","No",290,8,25,140,42,34,175
+"Caffè Mocha","grande","2%","Yes",360,15,50,150,44,35,175
+"Caffè Mocha","grande","Whole","No",330,12,30,130,42,34,175
+"Caffè Mocha","grande","Whole","Yes",400,19,55,135,44,35,175
+"Caffè Mocha","grande","Soy","No",260,7,0,110,37,26,175
+"Caffè Mocha","grande","Soy","Yes",330,14,25,115,39,28,175
+"Caffè Mocha","grande","Coconut","No",250,9,0,130,38,30,175
+"Caffè Mocha","grande","Coconut","Yes",320,16,25,135,40,32,175
+"Caffè Mocha","venti","Nonfat","No",310,3.5,10,170,54,44,185
+"Caffè Mocha","venti","Nonfat","Yes",390,10,35,170,56,45,185
+"Caffè Mocha","venti","2%","No",380,11,30,190,53,43,185
+"Caffè Mocha","venti","2%","Yes",450,18,55,190,55,45,185
+"Caffè Mocha","venti","Whole","No",420,16,40,170,53,43,185
+"Caffè Mocha","venti","Whole","Yes",490,23,65,180,55,45,185
+"Caffè Mocha","venti","Soy","No",330,9,0,140,46,34,185
+"Caffè Mocha","venti","Soy","Yes",400,16,25,150,48,35,185
+"Caffè Mocha","venti","Coconut","No",320,12,0,170,48,38,185
+"Caffè Mocha","venti","Coconut","Yes",390,19,25,180,50,40,185
+"Iced Caffè Mocha","tall","Nonfat","No",150,2,5,65,27,22,95
+"Iced Caffè Mocha","tall","Nonfat","Yes",240,10,30,75,30,23,95
+"Iced Caffè Mocha","tall","2%","No",180,4.5,10,70,27,21,95
+"Iced Caffè Mocha","tall","2%","Yes",260,12,40,80,29,23,95
+"Iced Caffè Mocha","tall","Whole","No",190,6,15,65,27,21,95
+"Iced Caffè Mocha","tall","Whole","Yes",270,14,45,75,29,23,95
+"Iced Caffè Mocha","tall","Soy","No",160,4,0,60,25,18,95
+"Iced Caffè Mocha","tall","Soy","Yes",240,12,30,65,27,20,95
+"Iced Caffè Mocha","tall","Coconut","No",150,5,0,65,25,19,95
+"Iced Caffè Mocha","tall","Coconut","Yes",240,13,30,70,27,22,95
+"Iced Caffè Mocha","grande","Nonfat","No",200,2.5,5,80,36,28,175
+"Iced Caffè Mocha","grande","Nonfat","Yes",320,14,45,90,40,30,175
+"Iced Caffè Mocha","grande","2%","No",230,6,15,90,36,28,175
+"Iced Caffè Mocha","grande","2%","Yes",350,17,55,100,39,30,175
+"Iced Caffè Mocha","grande","Whole","No",250,8,15,80,36,28,175
+"Iced Caffè Mocha","grande","Whole","Yes",360,19,60,95,39,30,175
+"Iced Caffè Mocha","grande","Soy","No",210,5,0,75,33,24,175
+"Iced Caffè Mocha","grande","Soy","Yes",330,16,40,85,37,26,175
+"Iced Caffè Mocha","grande","Coconut","No",210,6,0,80,34,26,175
+"Iced Caffè Mocha","grande","Coconut","Yes",320,18,40,95,37,29,175
+"Iced Caffè Mocha","venti","Nonfat","No",300,3.5,5,110,53,41,265
+"Iced Caffè Mocha","venti","Nonfat","Yes",410,15,45,120,57,43,265
+"Iced Caffè Mocha","venti","2%","No",340,8,20,120,53,41,265
+"Iced Caffè Mocha","venti","2%","Yes",450,19,60,130,56,43,265
+"Iced Caffè Mocha","venti","Whole","No",360,11,25,110,53,41,265
+"Iced Caffè Mocha","venti","Whole","Yes",470,22,65,125,56,43,265
+"Iced Caffè Mocha","venti","Soy","No",310,7,0,100,49,35,265
+"Iced Caffè Mocha","venti","Soy","Yes",430,18,40,110,53,37,265
+"Iced Caffè Mocha","venti","Coconut","No",300,9,0,115,50,38,265
+"Iced Caffè Mocha","venti","Coconut","Yes",420,20,40,125,53,41,265
+"Cappuccino","short","Nonfat","No",50,0.1,5,60,8,7,75
+"Cappuccino","short","2%","No",80,3,10,70,8,7,75
+"Cappuccino","short","Whole","No",90,4.5,15,60,8,7,75
+"Cappuccino","short","Soy","No",50,1.5,0,40,4,3,75
+"Cappuccino","short","Coconut","No",70,4,0,75,7,6,75
+"Cappuccino","tall","Nonfat","No",60,0.1,5,70,9,8,75
+"Cappuccino","tall","2%","No",90,3.5,15,80,9,8,75
+"Cappuccino","tall","Whole","No",110,6,15,75,9,8,75
+"Cappuccino","tall","Soy","No",70,3,0,65,7,4,75
+"Cappuccino","tall","Coconut","No",100,6,0,115,11,9,75
+"Cappuccino","grande","Nonfat","No",80,0.2,5,90,12,10,150
+"Cappuccino","grande","2%","No",120,4,15,100,12,10,150
+"Cappuccino","grande","Whole","No",140,7,20,90,12,10,150
+"Cappuccino","grande","Soy","No",100,3.5,0,80,9,5,150
+"Cappuccino","grande","Coconut","No",130,8,0,150,14,12,150
+"Cappuccino","venti","Nonfat","No",110,0.2,5,120,16,14,150
+"Cappuccino","venti","2%","No",150,6,25,135,16,14,150
+"Cappuccino","venti","Whole","No",190,9,30,125,16,14,150
+"Cappuccino","venti","Soy","No",120,4.5,0,110,11,7,150
+"Cappuccino","venti","Coconut","No",170,10,0,190,18,15,150
+"Caramel Macchiato","short","Nonfat","No",100,1,5,70,16,15,75
+"Caramel Macchiato","short","2%","No",120,4,15,80,16,15,75
+"Caramel Macchiato","short","Whole","No",140,6,20,70,16,15,75
+"Caramel Macchiato","short","Soy","No",100,3,0,60,14,11,75
+"Caramel Macchiato","short","Coconut","No",100,4,0,70,14,13,75
+"Caramel Macchiato","tall","Nonfat","No",150,1.5,10,105,27,25,75
+"Caramel Macchiato","tall","2%","No",190,6,20,120,26,25,75
+"Caramel Macchiato","tall","Whole","No",210,9,25,110,26,25,75
+"Caramel Macchiato","tall","Soy","No",160,4.5,5,95,22,19,75
+"Caramel Macchiato","tall","Coconut","No",150,6,5,105,23,21,75
+"Caramel Macchiato","grande","Nonfat","No",200,1.5,10,135,36,34,150
+"Caramel Macchiato","grande","2%","No",250,7,25,150,35,33,150
+"Caramel Macchiato","grande","Whole","No",280,11,35,140,35,33,150
+"Caramel Macchiato","grande","Soy","No",210,6,5,120,30,26,150
+"Caramel Macchiato","grande","Coconut","No",200,8,5,130,32,29,150
+"Caramel Macchiato","venti","Nonfat","No",250,1.5,10,170,45,42,150
+"Caramel Macchiato","venti","2%","No",310,9,35,190,44,42,150
+"Caramel Macchiato","venti","Whole","No",350,13,40,170,44,42,150
+"Caramel Macchiato","venti","Soy","No",260,7,5,150,38,33,150
+"Caramel Macchiato","venti","Coconut","No",250,10,5,170,39,36,150
+"Iced Caramel Macchiato","tall","Nonfat","No",140,1.5,10,100,26,24,75
+"Iced Caramel Macchiato","tall","2%","No",180,5,20,110,26,24,75
+"Iced Caramel Macchiato","tall","Whole","No",200,8,25,100,26,24,75
+"Iced Caramel Macchiato","tall","Soy","No",160,4.5,5,90,22,19,75
+"Iced Caramel Macchiato","tall","Coconut","No",140,6,5,95,23,21,75
+"Iced Caramel Macchiato","grande","Nonfat","No",210,2,10,135,37,35,150
+"Iced Caramel Macchiato","grande","2%","No",250,7,25,150,37,34,150
+"Iced Caramel Macchiato","grande","Whole","No",280,11,35,140,37,34,150
+"Iced Caramel Macchiato","grande","Soy","No",220,6,5,125,32,28,150
+"Iced Caramel Macchiato","grande","Coconut","No",210,8,5,130,33,30,150
+"Iced Caramel Macchiato","venti","Nonfat","No",290,2.5,15,180,53,50,225
+"Iced Caramel Macchiato","venti","2%","No",350,9,35,200,53,49,225
+"Iced Caramel Macchiato","venti","Whole","No",390,14,45,190,53,49,225
+"Iced Caramel Macchiato","venti","Soy","No",310,8,5,170,47,40,225
+"Iced Caramel Macchiato","venti","Coconut","No",290,10,5,170,47,43,225
+"Cinnamon Dolce Latte","short","Nonfat","No",100,0.1,5,70,20,19,75
+"Cinnamon Dolce Latte","short","Nonfat","Yes",160,5,20,75,22,21,75
+"Cinnamon Dolce Latte","short","2%","No",130,3,15,75,20,19,75
+"Cinnamon Dolce Latte","short","2%","Yes",180,8,30,80,22,20,75
+"Cinnamon Dolce Latte","short","Whole","No",150,5,15,70,20,19,75
+"Cinnamon Dolce Latte","short","Whole","Yes",200,10,35,75,22,20,75
+"Cinnamon Dolce Latte","short","Soy","No",110,2.5,0,60,17,15,75
+"Cinnamon Dolce Latte","short","Soy","Yes",170,8,20,65,19,16,75
+"Cinnamon Dolce Latte","short","Coconut","No",110,3.5,0,70,18,17,75
+"Cinnamon Dolce Latte","short","Coconut","Yes",160,9,20,75,20,19,75
+"Cinnamon Dolce Latte","tall","Nonfat","No",160,0.2,5,110,31,30,75
+"Cinnamon Dolce Latte","tall","Nonfat","Yes",220,6,30,115,33,31,75
+"Cinnamon Dolce Latte","tall","2%","No",200,5,20,125,30,29,75
+"Cinnamon Dolce Latte","tall","2%","Yes",270,11,45,130,32,31,75
+"Cinnamon Dolce Latte","tall","Whole","No",230,8,25,110,30,29,75
+"Cinnamon Dolce Latte","tall","Whole","Yes",290,14,50,120,32,31,75
+"Cinnamon Dolce Latte","tall","Soy","No",170,4,0,95,26,23,75
+"Cinnamon Dolce Latte","tall","Soy","No",240,10,20,100,28,25,75
+"Cinnamon Dolce Latte","tall","Coconut","No",160,6,0,110,27,26,75
+"Cinnamon Dolce Latte","tall","Coconut","Yes",230,12,20,115,29,28,75
+"Cinnamon Dolce Latte","grande","Nonfat","No",210,0.3,5,135,40,38,150
+"Cinnamon Dolce Latte","grande","Nonfat","Yes",280,7,30,140,43,40,150
+"Cinnamon Dolce Latte","grande","2%","No",260,6,25,150,40,38,150
+"Cinnamon Dolce Latte","grande","2%","Yes",330,13,50,160,42,40,150
+"Cinnamon Dolce Latte","grande","Whole","No",300,10,30,140,40,38,150
+"Cinnamon Dolce Latte","grande","Whole","Yes",370,17,60,150,42,40,150
+"Cinnamon Dolce Latte","grande","Soy","No",220,5,0,120,34,30,150
+"Cinnamon Dolce Latte","grande","Soy","Yes",300,12,25,125,37,32,150
+"Cinnamon Dolce Latte","grande","Coconut","No",210,7,0,140,36,33,150
+"Cinnamon Dolce Latte","grande","Coconut","Yes",290,14,25,150,38,36,150
+"Cinnamon Dolce Latte","venti","Nonfat","No",270,0.3,10,180,51,49,150
+"Cinnamon Dolce Latte","venti","Nonfat","Yes",340,7,35,190,54,51,150
+"Cinnamon Dolce Latte","venti","2%","No",330,8,35,200,50,48,150
+"Cinnamon Dolce Latte","venti","2%","Yes",410,15,60,210,53,50,150
+"Cinnamon Dolce Latte","venti","Whole","No",380,14,40,180,50,48,150
+"Cinnamon Dolce Latte","venti","Whole","Yes",450,21,70,190,53,50,150
+"Cinnamon Dolce Latte","venti","Soy","No",280,6,0,160,43,38,150
+"Cinnamon Dolce Latte","venti","Soy","Yes",360,13,25,160,46,40,150
+"Cinnamon Dolce Latte","venti","Coconut","No",270,10,0,180,45,42,150
+"Cinnamon Dolce Latte","venti","Coconut","Yes",350,17,25,190,47,45,150
+"Flat White","short","Nonfat","No",60,0.1,5,70,9,8,130
+"Flat White","short","2%","No",90,3.5,15,80,9,8,130
+"Flat White","short","Whole","No",110,5,15,70,9,8,130
+"Flat White","short","Soy","No",70,2.5,0,65,6,4,130
+"Flat White","short","Coconut","No",60,4,0,70,7,5,130
+"Flat White","tall","Nonfat","No",100,0.2,5,115,15,13,130
+"Flat White","tall","2%","No",140,5,20,130,14,13,130
+"Flat White","tall","Whole","No",170,9,25,115,14,13,130
+"Flat White","tall","Soy","No",110,4,0,100,10,6,130
+"Flat White","tall","Coconut","No",100,6,0,110,11,9,130
+"Flat White","grande","Nonfat","No",130,0.3,5,150,19,17,195
+"Flat White","grande","2%","No",180,7,30,160,18,17,195
+"Flat White","grande","Whole","No",220,11,35,150,18,17,195
+"Flat White","grande","Soy","No",150,5,0,130,13,8,195
+"Flat White","grande","Coconut","No",130,8,0,140,14,11,195
+"Flat White","venti","Nonfat","No",170,0.4,10,190,24,23,195
+"Flat White","venti","2%","No",240,9,35,220,24,22,195
+"Flat White","venti","Whole","No",290,15,45,200,24,22,195
+"Flat White","venti","Soy","No",190,7,0,170,16,11,195
+"Flat White","venti","Coconut","No",170,10,0,190,18,15,195
+"Latte Macchiato","short","Nonfat","No",60,0.1,5,70,10,8,150
+"Latte Macchiato","short","2%","No",90,3.5,15,80,9,8,150
+"Latte Macchiato","short","Whole","No",110,5,15,70,9,8,150
+"Latte Macchiato","short","Soy","No",70,2.5,0,60,7,4,150
+"Latte Macchiato","short","Coconut","No",70,3.5,0,70,7,5,150
+"Latte Macchiato","tall","Nonfat","No",100,0.2,5,115,15,13,150
+"Latte Macchiato","tall","2%","No",140,5,20,130,15,13,150
+"Latte Macchiato","tall","Whole","No",170,9,25,115,15,13,150
+"Latte Macchiato","tall","Soy","No",110,4,0,100,10,6,150
+"Latte Macchiato","tall","Coconut","No",100,6,0,110,11,9,150
+"Latte Macchiato","grande","Nonfat","No",130,0.3,5,150,19,17,225
+"Latte Macchiato","grande","2%","No",190,7,30,160,19,17,225
+"Latte Macchiato","grande","Whole","No",220,11,35,150,19,17,225
+"Latte Macchiato","grande","Soy","No",140,5,0,125,13,8,225
+"Latte Macchiato","grande","Coconut","No",130,8,0,140,14,11,225
+"Latte Macchiato","venti","Nonfat","No",170,0.4,10,190,25,23,225
+"Latte Macchiato","venti","2%","No",240,9,35,210,24,22,225
+"Latte Macchiato","venti","Whole","No",290,15,45,200,24,22,225
+"Latte Macchiato","venti","Soy","No",90,7,0,170,16,10,225
+"Latte Macchiato","venti","Coconut","No",170,10,0,190,18,15,225
+"Skinny Cinnamon Dolce Latte","short","Nonfat","No",60,0.1,5,80,9,8,75
+"Skinny Cinnamon Dolce Latte","tall","Nonfat","No",100,0.2,5,125,14,13,75
+"Skinny Cinnamon Dolce Latte","grande","Nonfat","No",120,0.3,5,160,19,16,150
+"Skinny Cinnamon Dolce Latte","venti","Nonfat","No",160,0.3,10,200,24,21,150
+"Iced Skinny Cinnamon Dolce Latte","tall","Nonfat","No",60,0.1,5,80,9,8,75
+"Iced Skinny Cinnamon Dolce Latte","grande","Nonfat","No",80,0.2,5,105,12,10,150
+"Iced Skinny Cinnamon Dolce Latte","venti","Nonfat","No",110,0.2,5,140,17,14,225
+"Skinny Mocha","short","Nonfat","No",80,1,5,70,12,7,75
+"Skinny Mocha","tall","Nonfat","No",130,1,5,115,18,12,75
+"Skinny Mocha","grande","Nonfat","No",160,1.5,5,140,24,15,150
+"Skinny Mocha","venti","Nonfat","No",210,2,10,190,30,19,150
+"Iced Skinny Mocha","tall","Nonfat","No",90,1,5,75,13,7,75
+"Iced Skinny Mocha","grande","Nonfat","No",120,1.5,5,95,17,8,150
+"Iced Skinny Mocha","venti","Nonfat","No",170,2.5,5,130,25,11,225
+"Starbucks Doubleshot on ice","tall","Nonfat","No",70,0,0,35,14,13,150
+"Starbucks Doubleshot on ice","tall","2%","No",80,1,5,35,14,13,150
+"Starbucks Doubleshot on ice","tall","Whole","No",90,2,5,35,14,13,150
+"Starbucks Doubleshot on ice","tall","Soy","No",70,1,0,30,13,11,150
+"Starbucks Doubleshot on ice","tall","Coconut","No",70,1.5,0,30,13,12,150
+"Starbucks Doubleshot on ice","grande","Nonfat","No",90,0,0,35,20,18,225
+"Starbucks Doubleshot on ice","grande","2%","No",100,1,5,40,20,18,225
+"Starbucks Doubleshot on ice","grande","Whole","No",110,2,5,35,20,18,225
+"Starbucks Doubleshot on ice","grande","Soy","No",100,1,0,35,19,16,225
+"Starbucks Doubleshot on ice","grande","Coconut","No",90,1.5,0,35,19,17,225
+"Starbucks Doubleshot on ice","venti","Nonfat","No",150,0.1,0,50,33,29,375
+"Starbucks Doubleshot on ice","venti","2%","No",170,2,5,55,33,29,375
+"Starbucks Doubleshot on ice","venti","Whole","No",180,3,10,50,33,29,375
+"Starbucks Doubleshot on ice","venti","Soy","No",160,1.5,0,45,31,27,375
+"Starbucks Doubleshot on ice","venti","Coconut","No",150,2,0,50,32,28,375
+"White Chocolate Mocha","short","Nonfat","No",180,3,5,115,30,29,75
+"White Chocolate Mocha","short","Nonfat","Yes",230,8,25,120,32,30,75
+"White Chocolate Mocha","short","2%","No",200,6,15,120,30,29,75
+"White Chocolate Mocha","short","2%","Yes",250,11,35,125,32,30,75
+"White Chocolate Mocha","short","Whole","No",210,8,15,115,30,29,75
+"White Chocolate Mocha","short","Whole","Yes",270,13,35,120,32,30,75
+"White Chocolate Mocha","short","Soy","No",180,5,5,105,28,25,75
+"White Chocolate Mocha","short","Soy","No",230,10,20,110,29,26,75
+"White Chocolate Mocha","short","Coconut","No",180,6,5,115,28,27,75
+"White Chocolate Mocha","short","Coconut","Yes",230,11,20,120,30,28,75
+"White Chocolate Mocha","tall","Nonfat","No",270,4.5,10,180,46,45,75
+"White Chocolate Mocha","tall","Nonfat","Yes",330,10,30,190,48,46,75
+"White Chocolate Mocha","tall","2%","No",300,9,25,190,46,44,75
+"White Chocolate Mocha","tall","2%","Yes",370,15,45,200,47,46,75
+"White Chocolate Mocha","tall","Whole","No",330,12,30,180,46,44,75
+"White Chocolate Mocha","tall","Whole","Yes",390,18,50,190,47,46,75
+"White Chocolate Mocha","tall","Soy","No",280,8,5,170,41,38,75
+"White Chocolate Mocha","tall","Soy","Yes",340,14,25,170,43,40,75
+"White Chocolate Mocha","tall","Coconut","No",270,10,5,180,42,41,75
+"White Chocolate Mocha","tall","Coconut","Yes",330,16,25,180,44,43,75
+"White Chocolate Mocha","grande","Nonfat","No",350,6,10,230,61,58,150
+"White Chocolate Mocha","grande","Nonfat","Yes",420,13,35,240,63,60,150
+"White Chocolate Mocha","grande","2%","No",400,11,30,240,60,58,150
+"White Chocolate Mocha","grande","2%","Yes",470,18,55,250,62,59,150
+"White Chocolate Mocha","grande","Whole","No",430,15,35,230,60,58,150
+"White Chocolate Mocha","grande","Whole","Yes",500,22,60,240,62,59,150
+"White Chocolate Mocha","grande","Soy","No",360,10,5,210,55,51,150
+"White Chocolate Mocha","grande","Soy","Yes",430,17,30,220,57,52,150
+"White Chocolate Mocha","grande","Coconut","No",350,12,5,230,56,54,150
+"White Chocolate Mocha","grande","Coconut","Yes",420,19,30,230,58,56,150
+"White Chocolate Mocha","venti","Nonfat","No",440,7,15,300,77,74,150
+"White Chocolate Mocha","venti","Nonfat","Yes",510,14,40,300,79,76,150
+"White Chocolate Mocha","venti","2%","No",500,15,35,320,76,74,150
+"White Chocolate Mocha","venti","2%","Yes",580,22,65,320,78,75,150
+"White Chocolate Mocha","venti","Whole","No",550,20,45,300,76,74,150
+"White Chocolate Mocha","venti","Whole","Yes",620,27,70,310,78,75,150
+"White Chocolate Mocha","venti","Soy","No",460,13,5,270,69,64,150
+"White Chocolate Mocha","venti","Soy","Yes",530,20,30,280,71,65,150
+"White Chocolate Mocha","venti","Coconut","No",450,16,5,290,71,68,150
+"White Chocolate Mocha","venti","Coconut","Yes",520,23,30,300,73,70,150
+"Iced White Chocolate Mocha","tall","Nonfat","No",230,4.5,5,135,41,40,75
+"Iced White Chocolate Mocha","tall","Nonfat","Yes",310,12,35,150,43,41,75
+"Iced White Chocolate Mocha","tall","2%","No",250,7,15,140,41,39,75
+"Iced White Chocolate Mocha","tall","2%","Yes",330,15,45,150,43,41,75
+"Iced White Chocolate Mocha","tall","Whole","No",270,9,15,140,41,39,75
+"Iced White Chocolate Mocha","tall","Whole","Yes",350,17,45,150,43,41,75
+"Iced White Chocolate Mocha","tall","Soy","No",240,6,5,130,38,36,75
+"Iced White Chocolate Mocha","tall","Soy","Yes",320,14,35,140,41,38,75
+"Iced White Chocolate Mocha","tall","Coconut","No",230,7,5,135,39,37,75
+"Iced White Chocolate Mocha","tall","Coconut","Yes",310,15,35,140,41,39,75
+"Iced White Chocolate Mocha","grande","Nonfat","No",310,6,10,170,54,52,150
+"Iced White Chocolate Mocha","grande","Nonfat","Yes",420,17,50,190,58,55,150
+"Iced White Chocolate Mocha","grande","2%","No",330,9,20,180,54,52,150
+"Iced White Chocolate Mocha","grande","2%","Yes",450,20,60,200,57,54,150
+"Iced White Chocolate Mocha","grande","Whole","No",350,11,20,180,54,52,150
+"Iced White Chocolate Mocha","grande","Whole","Yes",470,22,65,190,57,54,150
+"Iced White Chocolate Mocha","grande","Soy","No",320,8,5,170,51,48,150
+"Iced White Chocolate Mocha","grande","Soy","Yes",430,19,45,180,55,50,150
+"Iced White Chocolate Mocha","grande","Coconut","No",310,9,5,170,52,49,150
+"Iced White Chocolate Mocha","grande","Coconut","Yes",420,20,45,180,55,52,150
+"Iced White Chocolate Mocha","venti","Nonfat","No",450,9,10,260,81,77,225
+"Iced White Chocolate Mocha","venti","Nonfat","Yes",570,20,55,270,84,80,225
+"Iced White Chocolate Mocha","venti","2%","No",490,13,25,270,80,77,225
+"Iced White Chocolate Mocha","venti","2%","Yes",600,24,65,280,84,79,225
+"Iced White Chocolate Mocha","venti","Whole","No",520,16,30,260,80,77,225
+"Iced White Chocolate Mocha","venti","Whole","Yes",630,27,70,270,84,79,225
+"Iced White Chocolate Mocha","venti","Soy","No",470,12,10,250,77,71,225
+"Iced White Chocolate Mocha","venti","Soy","Yes",580,23,50,260,80,74,225
+"Iced White Chocolate Mocha","venti","Coconut","No",450,13,10,250,77,73,225
+"Iced White Chocolate Mocha","venti","Coconut","Yes",570,25,50,260,80,76,225
+"Iced Black tea","tall","None","No",60,0,0,5,15,15,25
+"Iced Black tea","grande","None","No",80,0,0,10,20,20,30
+"Iced Black tea","venti","None","No",120,0,0,15,30,30,45
+"Iced Black tea Lemonade","grande","None","No",90,0,0,5,24,24,25
+"Iced Black tea Lemonade","venti","None","No",120,0,0,5,32,32,30
+"Iced Black tea Lemonade","venti","None","No",190,0,0,10,48,47,45
+"Chai tea Latte","short","Nonfat","No",100,0.1,0,50,22,21,50
+"Chai tea Latte","short","2%","No",120,2,10,55,22,21,50
+"Chai tea Latte","short","Whole","No",130,3.5,10,55,22,21,50
+"Chai tea Latte","short","Soy","No",110,1.5,0,45,20,18,50
+"Chai tea Latte","short","Coconut","No",100,2.5,0,50,21,19,50
+"Chai tea Latte","tall","Nonfat","No",160,0.2,5,80,34,32,70
+"Chai tea Latte","tall","2%","No",190,3.5,15,90,34,32,70
+"Chai tea Latte","tall","Whole","No",200,6,15,80,34,32,70
+"Chai tea Latte","tall","Soy","No",160,2.5,0,70,31,28,70
+"Chai tea Latte","tall","Coconut","No",160,3.5,0,75,31,29,70
+"Chai tea Latte","grande","Nonfat","No",210,0.2,5,10,45,43,95
+"Chai tea Latte","grande","2%","No",240,4.5,20,115,45,42,95
+"Chai tea Latte","grande","Whole","No",270,7,20,105,45,42,95
+"Chai tea Latte","grande","Soy","No",220,3.5,0,90,41,37,95
+"Chai tea Latte","grande","Coconut","No",210,4.5,0,95,41,39,95
+"Chai tea Latte","venti","Nonfat","No",260,0.3,5,135,57,54,120
+"Chai tea Latte","venti","2%","No",310,6,25,150,56,53,120
+"Chai tea Latte","venti","Whole","No",340,9,30,135,56,53,120
+"Chai tea Latte","venti","Soy","No",280,4.5,0,115,51,46,120
+"Chai tea Latte","venti","Coconut","No",260,6,0,120,52,48,120
+"Iced Chai Tea Latte","tall","Nonfat","No",150,0.2,5,75,33,31,70
+"Iced Chai Tea Latte","tall","2%","No",180,3,10,80,33,31,70
+"Iced Chai Tea Latte","tall","Whole","No",190,5,15,75,33,31,70
+"Iced Chai Tea Latte","tall","Soy","No",160,2.5,0,70,30,27,70
+"Iced Chai Tea Latte","tall","Coconut","No",150,3.5,0,70,31,29,70
+"Iced Chai Tea Latte","grande","Nonfat","No",200,0.2,5,100,44,42,95
+"Iced Chai Tea Latte","grande","2%","No",240,4,15,110,44,42,95
+"Iced Chai Tea Latte","grande","Whole","No",260,7,20,105,44,42,95
+"Iced Chai Tea Latte","grande","Soy","No",220,3.5,0,90,41,37,95
+"Iced Chai Tea Latte","grande","Coconut","No",200,4.5,0,95,41,38,95
+"Iced Chai Tea Latte","venti","Nonfat","No",300,0.3,5,140,65,62,145
+"Iced Chai Tea Latte","venti","2%","No",350,6,25,160,65,61,145
+"Iced Chai Tea Latte","venti","Whole","No",380,9,30,140,65,61,145
+"Iced Chai Tea Latte","venti","Soy","No",320,4.5,0,130,60,55,145
+"Iced Chai Tea Latte","venti","Coconut","No",300,6,0,135,61,57,145
+"Earl Grey Brewed Tea","short","None","No",0,0,0,0,0,0,40
+"Earl Grey Brewed Tea","tall","None","No",0,0,0,0,0,0,40
+"Earl Grey Brewed Tea","grande","None","No",0,0,0,0,0,0,40
+"Earl Grey Brewed Tea","venti","None","No",0,0,0,0,0,0,40
+"Emperor's Clouds and Mist Brewed Tea","short","None","No",0,0,0,0,0,0,15
+"Emperor's Clouds and Mist Brewed Tea","tall","None","No",0,0,0,0,0,0,15
+"Emperor's Clouds and Mist Brewed Tea","grande","None","No",0,0,0,0,0,0,25
+"Emperor's Clouds and Mist Brewed Tea","venti","None","No",0,0,0,0,0,0,25
+"English Breakfast Black Brewed Tea","short","None","No",0,0,0,0,0,0,40
+"English Breakfast Black Brewed Tea","tall","None","No",0,0,0,0,0,0,40
+"English Breakfast Black Brewed Tea","grande","None","No",0,0,0,0,0,0,40
+"English Breakfast Black Brewed Tea","venti","None","No",0,0,0,0,0,0,40
+"English Breakfast Black Tea Latte","short","Nonfat","No",80,0.1,0,50,15,15,40
+"English Breakfast Black Tea Latte","short","2%","No",100,2,10,55,15,15,40
+"English Breakfast Black Tea Latte","short","Whole","No",110,3.5,10,50,15,15,40
+"English Breakfast Black Tea Latte","short","Soy","No",80,1.5,0,40,13,12,40
+"English Breakfast Black Tea Latte","short","Coconut","No",80,2.5,0,45,14,13,40
+"English Breakfast Black Tea Latte","tall","Nonfat","No",110,0.1,5,70,23,23,40
+"English Breakfast Black Tea Latte","tall","2%","No",140,3,15,80,23,23,40
+"English Breakfast Black Tea Latte","tall","Whole","No",160,5,15,75,23,23,40
+"English Breakfast Black Tea Latte","tall","Soy","No",120,2.5,0,60,20,18,40
+"English Breakfast Black Tea Latte","tall","Coconut","No",120,3.5,0,70,20,20,40
+"English Breakfast Black Tea Latte","grande","Nonfat","No",150,0.2,5,95,30,30,40
+"English Breakfast Black Tea Latte","grande","2%","No",180,4,15,105,30,30,40
+"English Breakfast Black Tea Latte","grande","Whole","No",210,7,20,95,30,30,40
+"English Breakfast Black Tea Latte","grande","Soy","No",160,3,0,80,26,24,40
+"English Breakfast Black Tea Latte","grande","Coconut","No",150,4.5,0,90,27,26,40
+"English Breakfast Black Tea Latte","venti","Nonfat","No",190,0.2,5,120,38,38,40
+"English Breakfast Black Tea Latte","venti","2%","No",230,5,20,135,38,38,40
+"English Breakfast Black Tea Latte","venti","Whole","No",260,9,25,125,38,38,40
+"English Breakfast Black Tea Latte","venti","Soy","No",200,4,0,105,33,31,40
+"English Breakfast Black Tea Latte","venti","Coconut","No",190,6,0,115,34,33,40
+"Green Tea Latte","short","Nonfat","No",80,0.2,5,70,14,14,30
+"Green Tea Latte","short","2%","No",110,3.5,15,80,14,14,30
+"Green Tea Latte","short","Whole","No",130,6,15,75,14,14,30
+"Green Tea Latte","short","Soy","No",90,3,0,65,11,9,30
+"Green Tea Latte","short","Coconut","No",80,3.5,0,65,11,11,30
+"Green Tea Latte","tall","Nonfat","No",140,0.3,5,115,25,24,55
+"Green Tea Latte","tall","2%","No",190,5,20,125,25,24,55
+"Green Tea Latte","tall","Whole","No",220,9,25,115,25,24,55
+"Green Tea Latte","tall","Soy","No",160,4.5,0,105,20,17,55
+"Green Tea Latte","tall","Coconut","No",140,6,0,105,21,19,55
+"Green Tea Latte","grande","Nonfat","No",190,0.4,5,140,34,33,80
+"Green Tea Latte","grande","2%","No",240,7,25,160,34,32,80
+"Green Tea Latte","grande","Whole","No",280,11,35,150,34,32,80
+"Green Tea Latte","grande","Soy","No",210,6,0,130,28,24,80
+"Green Tea Latte","grande","Coconut","No",190,8,0,135,29,27,80
+"Green Tea Latte","venti","Nonfat","No",250,0.5,10,190,45,44,110
+"Green Tea Latte","venti","2%","No",320,9,35,210,45,43,110
+"Green Tea Latte","venti","Whole","No",370,15,45,190,45,43,110
+"Green Tea Latte","venti","Soy","No",280,7,0,170,38,32,110
+"Green Tea Latte","venti","Coconut","No",250,10,0,180,38,36,110
+"Iced Green Tea Latte","tall","Nonfat","No",120,0.3,5,95,22,21,55
+"Iced Green Tea Latte","tall","2%","No",160,4.5,15,105,22,21,55
+"Iced Green Tea Latte","tall","Whole","No",180,7,20,95,22,21,55
+"Iced Green Tea Latte","tall","Soy","No",140,3.5,0,85,18,16,55
+"Iced Green Tea Latte","tall","Coconut","No",120,4.5,0,90,19,18,55
+"Iced Green Tea Latte","grande","Nonfat","No",170,0.4,5,130,32,31,80
+"Iced Green Tea Latte","grande","2%","No",220,6,25,140,31,30,80
+"Iced Green Tea Latte","grande","Whole","No",250,10,30,130,31,30,80
+"Iced Green Tea Latte","grande","Soy","No",190,5,0,115,27,23,80
+"Iced Green Tea Latte","grande","Coconut","No",170,7,0,120,27,25,80
+"Iced Green Tea Latte","venti","Nonfat","No",240,0.5,10,180,44,42,110
+"Iced Green Tea Latte","venti","2%","No",310,8,35,200,43,41,110
+"Iced Green Tea Latte","venti","Whole","No",350,14,40,190,43,41,110
+"Iced Green Tea Latte","venti","Soy","No",270,7,0,170,37,32,110
+"Iced Green Tea Latte","venti","Coconut","No",240,9,0,170,37,35,110
+"Iced Green Tea","tall","None","No",60,0,0,5,15,15,25
+"Iced Green Tea","grande","None","No",80,0,0,10,20,20,30
+"Iced Green Tea","venti","None","No",120,0,0,15,30,30,45
+"Iced Green Tea Lemonade","tall","None","No",90,0,0,5,24,24,25
+"Iced Green Tea Lemonade","grande","None","No",120,0,0,5,32,32,30
+"Iced Green Tea Lemonade","venti","None","No",190,0,0,10,48,47,45
+"Jade Citrus Mint Brewed tea","short","None","No",0,0,0,0,0,0,25
+"Jade Citrus Mint Brewed tea","tall","None","No",0,0,0,0,0,0,25
+"Jade Citrus Mint Brewed tea","grande","None","No",0,0,0,0,0,0,40
+"Jade Citrus Mint Brewed tea","venti","None","No",0,0,0,0,0,0,40
+"London Fog Tea Latte","short","Nonfat","No",80,0.1,0,50,15,15,40
+"London Fog Tea Latte","short","2%","No",100,2,10,55,15,15,40
+"London Fog Tea Latte","short","Whole","No",110,3.5,10,50,15,15,40
+"London Fog Tea Latte","short","Soy","No",80,1.5,0,40,13,12,40
+"London Fog Tea Latte","short","Coconut","No",80,2.5,0,45,14,13,40
+"London Fog Tea Latte","tall","Nonfat","No",110,0.1,5,70,23,23,40
+"London Fog Tea Latte","tall","2%","No",140,3,15,80,23,23,40
+"London Fog Tea Latte","tall","Whole","No",160,5,15,75,23,23,40
+"London Fog Tea Latte","tall","Soy","No",120,2.5,0,60,20,18,40
+"London Fog Tea Latte","tall","Coconut","No",120,3.5,0,70,20,20,40
+"London Fog Tea Latte","grande","Nonfat","No",150,0.2,5,95,30,30,40
+"London Fog Tea Latte","grande","2%","No",180,4,15,105,30,30,40
+"London Fog Tea Latte","grande","Whole","No",210,7,20,95,30,30,40
+"London Fog Tea Latte","grande","Soy","No",160,3,0,80,26,24,40
+"London Fog Tea Latte","grande","Coconut","No",150,4.5,0,90,27,26,40
+"London Fog Tea Latte","venti","Nonfat","No",190,0.2,5,120,38,38,40
+"London Fog Tea Latte","venti","2%","No",230,5,20,135,38,38,40
+"London Fog Tea Latte","venti","Whole","No",260,9,25,125,38,38,40
+"London Fog Tea Latte","venti","Soy","No",200,4,0,105,33,31,40
+"London Fog Tea Latte","venti","Coconut","No",190,6,0,115,34,33,40
+"Iced Mango Black Tea","tall","None","No",60,0.1,0,10,14,14,25
+"Iced Mango Black Tea","grande","None","No",80,0.2,0,10,19,19,30
+"Iced Mango Black Tea","venti","None","No",120,0.3,0,15,29,28,45
+"Iced Mango Black Tea Lemonade","tall","None","No",90,0.1,0,5,24,23,25
+"Iced Mango Black Tea Lemonade","grande","None","No",120,0.2,0,10,31,31,30
+"Iced Mango Black Tea Lemonade","venti","None","No",190,0.3,0,10,47,46,45
+"Mint Majesty Brewed Tea","short","None","No",0,0,0,0,0,0,0
+"Mint Majesty Brewed Tea","tall","None","No",0,0,0,0,0,0,0
+"Mint Majesty Brewed Tea","grande","None","No",0,0,0,0,0,0,0
+"Mint Majesty Brewed Tea","venti","None","No",0,0,0,0,0,0,0
+"Oprah Chai Herbal Brewed Tea","short","None","No",0,0,0,0,0,0,0
+"Oprah Chai Herbal Brewed Tea","tall","None","No",0,0,0,0,0,0,0
+"Oprah Chai Herbal Brewed Tea","grande","None","No",0,0,0,0,0,0,0
+"Oprah Chai Herbal Brewed Tea","venti","None","No",0,0,0,0,0,0,0
+"Oprah Cinnamon Chai Brewed Tea","short","None","No",0,0,0,0,0,0,15
+"Oprah Cinnamon Chai Brewed Tea","tall","None","No",0,0,0,0,0,0,15
+"Oprah Cinnamon Chai Brewed Tea","grande","None","No",0,0,0,0,0,0,25
+"Oprah Cinnamon Chai Brewed Tea","venti","None","No",0,0,0,0,0,0,25
+"Oprah Cinnamon Chai Latte","short","Nonfat","No",80,0.1,0,45,17,16,25
+"Oprah Cinnamon Chai Latte","short","2%","No",100,2,10,50,16,15,25
+"Oprah Cinnamon Chai Latte","short","Whole","No",110,3.5,10,50,16,15,25
+"Oprah Cinnamon Chai Latte","short","Soy","No",90,1.5,0,40,15,13,25
+"Oprah Cinnamon Chai Latte","short","Coconut","No",80,2.5,0,45,15,14,25
+"Oprah Cinnamon Chai Latte","tall","Nonfat","No",130,0.1,5,70,25,23,40
+"Oprah Cinnamon Chai Latte","tall","2%","No",150,3,15,80,25,23,40
+"Oprah Cinnamon Chai Latte","tall","Whole","No",170,5,15,70,25,23,40
+"Oprah Cinnamon Chai Latte","tall","Soy","No",130,2.5,0,70,22,21,40
+"Oprah Cinnamon Chai Latte","tall","Coconut","No",130,3.5,0,70,22,21,40
+"Oprah Cinnamon Chai Latte","grande","Nonfat","No",170,0.2,5,90,33,31,50
+"Oprah Cinnamon Chai Latte","grande","2%","No",200,4,15,100,33,31,50
+"Oprah Cinnamon Chai Latte","grande","Whole","No",220,7,20,95,33,31,50
+"Oprah Cinnamon Chai Latte","grande","Soy","No",170,3,0,80,29,25,50
+"Oprah Cinnamon Chai Latte","grande","Coconut","No",170,4.5,0,90,30,28,50
+"Oprah Cinnamon Chai Latte","venti","Nonfat","No",210,0.2,5,115,41,39,65
+"Oprah Cinnamon Chai Latte","venti","2%","No",250,5,20,130,41,38,65
+"Oprah Cinnamon Chai Latte","venti","Whole","No",280,9,25,120,41,38,65
+"Oprah Cinnamon Chai Latte","venti","Soy","No",220,4,0,100,36,32,65
+"Oprah Cinnamon Chai Latte","venti","Coconut","No",210,6,0,115,37,34,65
+"Iced Oprah Cinnamon Chai Latte","tall","Nonfat","No",120,0.1,5,70,24,23,40
+"Iced Oprah Cinnamon Chai Latte","tall","2%","No",150,3,10,75,24,23,40
+"Iced Oprah Cinnamon Chai Latte","tall","Whole","No",160,5,15,70,24,23,40
+"Iced Oprah Cinnamon Chai Latte","tall","Soy","No",130,2.5,0,65,22,19,40
+"Iced Oprah Cinnamon Chai Latte","tall","Coconut","No",120,3.5,0,65,22,20,40
+"Iced Oprah Cinnamon Chai Latte","grande","Nonfat","No",170,0.2,5,95,33,31,50
+"Iced Oprah Cinnamon Chai Latte","grande","2%","No",200,4,15,105,33,31,50
+"Iced Oprah Cinnamon Chai Latte","grande","Whole","No",220,7,20,95,33,31,50
+"Iced Oprah Cinnamon Chai Latte","grande","Soy","No",180,3.5,0,85,29,26,50
+"Iced Oprah Cinnamon Chai Latte","grande","Coconut","No",170,4.5,0,90,30,27,50
+"Iced Oprah Cinnamon Chai Latte","venti","Nonfat","No",240,0.2,5,130,48,45,75
+"Iced Oprah Cinnamon Chai Latte","venti","2%","No",290,6,25,150,48,45,75
+"Iced Oprah Cinnamon Chai Latte","venti","Whole","No",320,9,30,135,48,45,75
+"Iced Oprah Cinnamon Chai Latte","venti","Soy","No",260,4.5,0,120,43,38,75
+"Iced Oprah Cinnamon Chai Latte","venti","Coconut","No",240,6,0,125,44,40,75
+"Passion Tango Brewed Tea","short","None","No",0,0,0,0,0,0,0
+"Passion Tango Brewed Tea","tall","None","No",0,0,0,0,0,0,0
+"Passion Tango Brewed Tea","grande","None","No",0,0,0,0,0,0,0
+"Passion Tango Brewed Tea","venti","None","No",0,0,0,0,0,0,0
+"Iced Passion Tango Tea","tall","None","No",60,0,0,5,15,15,0
+"Iced Passion Tango Tea","grande","None","No",80,0,0,10,20,20,0
+"Iced Passion Tango Tea","venti","None","No",120,0,0,15,30,30,0
+"Iced Passion Tango Tea Lemonade","tall","None","No",90,0,0,5,24,24,0
+"Iced Passion Tango Tea Lemonade","grande","None","No",120,0,0,5,32,32,0
+"Iced Passion Tango Tea Lemonade","venti","None","No",190,0,0,10,48,47,0
+"Peach Iced Green Tea","tall","None","No",60,0.1,0,0,15,15,25
+"Peach Iced Green Tea","grande","None","No",80,0.2,0,0,20,20,30
+"Peach Iced Green Tea","venti","None","No",130,0.3,0,2,31,30,45
+"Peach Iced Green Tea Lemonade","tall","None","No",100,0.1,0,0,25,24,25
+"Peach Iced Green Tea Lemonade","grande","None","No",130,0.2,0,1,33,32,30
+"Peach Iced Green Tea Lemonade","venti","None","No",190,0.3,0,2,49,48,45
+"Peach Tranquility Brewed Tea","short","None","No",0,0,0,0,0,0,0
+"Peach Tranquility Brewed Tea","tall","None","No",0,0,0,0,0,0,0
+"Peach Tranquility Brewed Tea","grande","None","No",0,0,0,0,0,0,0
+"Peach Tranquility Brewed Tea","venti","None","No",0,0,0,0,0,0,0
+"Youthberry Brewed Tea","short","None","No",0,0,0,0,0,0,15
+"Youthberry Brewed Tea","tall","None","No",0,0,0,0,0,0,15
+"Youthberry Brewed Tea","grande","None","No",0,0,0,0,0,0,25
+"Youthberry Brewed Tea","venti","None","No",0,0,0,0,0,0,25
+"Cool Lime Starbucks Refreshers","tall","None","No",60,0,0,2,14,14,45
+"Cool Lime Starbucks Refreshers","grande","None","No",70,0,0,2,19,18,55
+"Cool Lime Starbucks Refreshers","venti","None","No",110,0,0,3,28,27,85
+"Very Berry Hibiscus Starbucks Refreshers","tall","None","No",70,0.1,0,2,18,15,45
+"Very Berry Hibiscus Starbucks Refreshers","grande","None","No",90,0.1,0,3,22,20,55
+"Very Berry Hibiscus Starbucks Refreshers","venti","None","No",130,0.1,0,4,32,29,85
+"Chocolate Smoothie","grande","Nonfat","No",300,2.5,5,160,53,34,20
+"Chocolate Smoothie","grande","2%","No",320,5,15,170,53,34,20
+"Chocolate Smoothie","grande","Whole","No",340,7,15,160,53,34,20
+"Chocolate Smoothie","grande","Soy","No",310,4.5,5,150,51,31,20
+"Chocolate Smoothie","grande","Coconut","No",290,5,5,150,51,32,20
+"Orange Mango Smoothie","grande","Nonfat","No",260,1,5,120,54,37,0
+"Orange Mango Smoothie","grande","2%","No",270,1.5,5,125,53,37,0
+"Orange Mango Smoothie","grande","Whole","No",280,2.5,5,120,53,37,0
+"Orange Mango Smoothie","grande","Soy","No",270,1.5,5,120,53,36,0
+"Orange Mango Smoothie","grande","Coconut","No",260,1.5,5,120,53,36,0
+"Strawberry Smoothie","grande","Nonfat","No",290,1,5,125,60,41,0
+"Strawberry Smoothie","grande","2%","No",300,2,5,130,60,41,0
+"Strawberry Smoothie","grande","Whole","No",300,2.5,10,125,60,41,0
+"Strawberry Smoothie","grande","Soy","No",290,1.5,5,125,59,40,0
+"Strawberry Smoothie","grande","Coconut","No",290,2,5,125,59,41,0
+"Caffè Vanilla Frappuccino Blended","tall","Nonfat","No",200,0.1,0,150,47,46,65
+"Caffè Vanilla Frappuccino Blended","tall","Nonfat","Yes",280,8,30,160,50,48,65
+"Caffè Vanilla Frappuccino Blended","tall","2%","No",210,1.5,5,160,47,46,65
+"Caffè Vanilla Frappuccino Blended","tall","2%","Yes",290,10,35,170,50,48,65
+"Caffè Vanilla Frappuccino Blended","tall","Whole","No",220,2.5,10,150,47,46,65
+"Caffè Vanilla Frappuccino Blended","tall","Whole","Yes",300,11,35,160,50,48,65
+"Caffè Vanilla Frappuccino Blended","tall","Soy","No",200,1.5,0,150,46,44,65
+"Caffè Vanilla Frappuccino Blended","tall","Soy","Yes",290,9,30,160,48,46,65
+"Caffè Vanilla Frappuccino Blended","tall","Coconut","No",200,1.5,0,150,47,45,65
+"Caffè Vanilla Frappuccino Blended","tall","Coconut","Yes",280,10,30,160,49,47,65
+"Caffè Vanilla Frappuccino Blended","grande","Nonfat","No",290,0.1,0,220,69,67,95
+"Caffè Vanilla Frappuccino Blended","grande","Nonfat","Yes",400,11,45,230,72,69,95
+"Caffè Vanilla Frappuccino Blended","grande","2%","No",300,2,10,220,68,67,95
+"Caffè Vanilla Frappuccino Blended","grande","2%","Yes",420,13,50,230,72,69,95
+"Caffè Vanilla Frappuccino Blended","grande","Whole","No",310,3,10,220,68,67,95
+"Caffè Vanilla Frappuccino Blended","grande","Whole","Yes",430,14,50,230,72,69,95
+"Caffè Vanilla Frappuccino Blended","grande","Soy","No",290,1.5,0,210,67,64,95
+"Caffè Vanilla Frappuccino Blended","grande","Soy","Yes",410,13,40,220,70,67,95
+"Caffè Vanilla Frappuccino Blended","grande","Coconut","No",290,2,0,210,68,66,95
+"Caffè Vanilla Frappuccino Blended","grande","Coconut","Yes",400,13,40,220,71,69,95
+"Caffè Vanilla Frappuccino Blended","venti","Nonfat","No",370,0.2,5,290,88,86,125
+"Caffè Vanilla Frappuccino Blended","venti","Nonfat","Yes",490,11,45,300,92,88,125
+"Caffè Vanilla Frappuccino Blended","venti","2%","No",400,3,10,290,88,86,125
+"Caffè Vanilla Frappuccino Blended","venti","2%","Yes",510,14,55,300,91,88,125
+"Caffè Vanilla Frappuccino Blended","venti","Whole","No",410,5,15,290,88,86,125
+"Caffè Vanilla Frappuccino Blended","venti","Whole","Yes",530,16,55,300,91,88,125
+"Caffè Vanilla Frappuccino Blended","venti","Soy","No",380,2.5,0,280,86,82,125
+"Caffè Vanilla Frappuccino Blended","venti","Soy","Yes",500,14,40,290,89,85,125
+"Caffè Vanilla Frappuccino Blended","venti","Coconut","No",380,3,0,280,87,84,125
+"Caffè Vanilla Frappuccino Blended","venti","Coconut","Yes",490,14,40,290,90,87,125
+"Caramel Frappuccino Blended","tall","Nonfat","No",180,0.1,0,160,42,42,70
+"Caramel Frappuccino Blended","tall","Nonfat","Yes",280,9,35,180,47,47,70
+"Caramel Frappuccino Blended","tall","2%","No",190,1.5,5,170,42,42,70
+"Caramel Frappuccino Blended","tall","2%","Yes",290,10,40,180,47,46,70
+"Caramel Frappuccino Blended","tall","Whole","No",200,2.5,10,160,42,42,70
+"Caramel Frappuccino Blended","tall","Whole","Yes",300,11,40,180,47,46,70
+"Caramel Frappuccino Blended","tall","Soy","No",190,1.5,0,160,41,40,70
+"Caramel Frappuccino Blended","tall","Soy","Yes",280,10,30,170,46,45,70
+"Caramel Frappuccino Blended","tall","Coconut","No",180,2,0,160,41,40,70
+"Caramel Frappuccino Blended","tall","Coconut","Yes",280,10,30,170,46,45,70
+"Caramel Frappuccino Blended","grande","Nonfat","No",260,0.1,0,230,60,60,100
+"Caramel Frappuccino Blended","grande","Nonfat","Yes",390,12,45,240,67,66,100
+"Caramel Frappuccino Blended","grande","2%","No",270,2,10,230,60,60,100
+"Caramel Frappuccino Blended","grande","2%","Yes",410,14,50,250,67,66,100
+"Caramel Frappuccino Blended","grande","Whole","No",280,3.5,10,230,60,60,100
+"Caramel Frappuccino Blended","grande","Whole","Yes",420,15,55,250,67,66,100
+"Caramel Frappuccino Blended","grande","Soy","No",260,1.5,0,220,59,57,100
+"Caramel Frappuccino Blended","grande","Soy","Yes",400,14,45,240,65,63,100
+"Caramel Frappuccino Blended","grande","Coconut","No",260,2,0,220,59,58,100
+"Caramel Frappuccino Blended","grande","Coconut","Yes",390,14,45,240,65,64,100
+"Caramel Frappuccino Blended","venti","Nonfat","No",340,0.1,5,300,79,78,130
+"Caramel Frappuccino Blended","venti","Nonfat","Yes",470,12,45,320,85,84,130
+"Caramel Frappuccino Blended","venti","2%","No",360,3,10,310,78,78,130
+"Caramel Frappuccino Blended","venti","2%","Yes",500,15,55,330,85,84,130
+"Caramel Frappuccino Blended","venti","Whole","No",380,5,15,300,78,78,130
+"Caramel Frappuccino Blended","venti","Whole","Yes",510,17,60,320,85,84,130
+"Caramel Frappuccino Blended","venti","Soy","No",350,2.5,0,290,76,74,130
+"Caramel Frappuccino Blended","venti","Soy","Yes",480,14,45,310,83,80,130
+"Caramel Frappuccino Blended","venti","Coconut","No",340,3.5,0,300,76,75,130
+"Caramel Frappuccino Blended","venti","Coconut","Yes",470,15,45,320,83,81,130
+"Coffee Frappuccino Blended","tall","Nonfat","No",160,0.1,0,160,36,36,70
+"Coffee Frappuccino Blended","tall","2%","No",170,1.5,5,160,36,36,70
+"Coffee Frappuccino Blended","tall","Whole","No",180,2.5,10,160,36,36,70
+"Coffee Frappuccino Blended","tall","Soy","No",160,1.5,0,150,35,34,70
+"Coffee Frappuccino Blended","tall","Coconut","No",160,2,0,150,36,35,70
+"Coffee Frappuccino Blended","grande","Nonfat","No",220,0.1,0,210,51,50,95
+"Coffee Frappuccino Blended","grande","2%","No",230,2,10,220,50,50,95
+"Coffee Frappuccino Blended","grande","Whole","No",240,3,10,220,50,50,95
+"Coffee Frappuccino Blended","grande","Soy","No",220,1.5,0,210,49,47,95
+"Coffee Frappuccino Blended","grande","Coconut","No",220,2,0,210,50,49,95
+"Coffee Frappuccino Blended","venti","Nonfat","No",310,0.1,5,300,70,69,130
+"Coffee Frappuccino Blended","venti","2%","No",330,3,10,310,70,69,130
+"Coffee Frappuccino Blended","venti","Whole","No",350,5,15,300,70,69,130
+"Coffee Frappuccino Blended","venti","Soy","No",310,2.5,0,300,68,66,130
+"Coffee Frappuccino Blended","venti","Coconut","No",310,3.5,0,300,69,68,135
+"Espresso Frappuccino Blended","tall","Nonfat","No",150,0,0,135,34,33,130
+"Espresso Frappuccino Blended","tall","2%","No",150,1,5,140,34,33,130
+"Espresso Frappuccino Blended","tall","Whole","No",160,1.5,5,140,34,33,130
+"Espresso Frappuccino Blended","tall","Soy","No",150,1,0,135,33,31,130
+"Espresso Frappuccino Blended","tall","Coconut","No",150,1,0,135,34,32,130
+"Espresso Frappuccino Blended","grande","Nonfat","No",210,0.1,0,200,50,49,165
+"Espresso Frappuccino Blended","grande","2%","No",220,1.5,5,210,50,48,165
+"Espresso Frappuccino Blended","grande","Whole","No",230,2.5,5,200,50,48,165
+"Espresso Frappuccino Blended","grande","Soy","No",220,1,0,200,49,47,165
+"Espresso Frappuccino Blended","grande","Coconut","No",220,1.5,0,200,50,48,165
+"Espresso Frappuccino Blended","venti","Nonfat","No",280,0.1,0,270,65,63,185
+"Espresso Frappuccino Blended","venti","2%","No",300,2.5,10,280,65,63,185
+"Espresso Frappuccino Blended","venti","Whole","No",310,4,10,270,65,63,185
+"Espresso Frappuccino Blended","venti","Soy","No",290,2,0,270,63,60,165
+"Espresso Frappuccino Blended","venti","Coconut","No",280,2.5,0,270,64,62,165
+"Java Chip Frappuccino Blended","tall","Nonfat","No",230,3,0,180,47,44,75
+"Java Chip Frappuccino Blended","tall","Nonfat","Yes",230,11,30,190,51,47,75
+"Java Chip Frappuccino Blended","tall","2%","No",240,4.5,5,180,47,44,75
+"Java Chip Frappuccino Blended","tall","2%","Yes",330,12,35,190,51,47,75
+"Java Chip Frappuccino Blended","tall","Whole","No",250,5,10,180,47,44,75
+"Java Chip Frappuccino Blended","tall","Whole","Yes",340,13,35,190,51,47,75
+"Java Chip Frappuccino Blended","tall","Soy","No",230,4,0,180,46,42,75
+"Java Chip Frappuccino Blended","tall","Soy","Yes",320,12,30,180,50,45,75
+"Java Chip Frappuccino Blended","tall","Coconut","No",230,4.5,0,180,46,43,75
+"Java Chip Frappuccino Blended","tall","Coconut","Yes",320,13,30,180,50,46,75
+"Java Chip Frappuccino Blended","grande","Nonfat","No",320,4,0,250,68,63,110
+"Java Chip Frappuccino Blended","grande","Nonfat","Yes",440,15,45,260,72,67,110
+"Java Chip Frappuccino Blended","grande","2%","No",340,6,10,260,58,63,110
+"Java Chip Frappuccino Blended","grande","2%","Yes",460,17,50,270,72,66,110
+"Java Chip Frappuccino Blended","grande","Whole","No",350,7,10,250,68,63,110
+"Java Chip Frappuccino Blended","grande","Whole","Yes",470,18,50,260,72,66,110
+"Java Chip Frappuccino Blended","grande","Soy","No",330,6,0,250,66,61,110
+"Java Chip Frappuccino Blended","grande","Soy","Yes",450,17,40,260,71,64,110
+"Java Chip Frappuccino Blended","grande","Coconut","No",320,6,0,250,66,61,110
+"Java Chip Frappuccino Blended","grande","Coconut","Yes",440,17,40,260,71,66,110
+"Java Chip Frappuccino Blended","venti","Nonfat","No",440,6,5,340,91,85,145
+"Java Chip Frappuccino Blended","venti","Nonfat","Yes",560,17,45,350,96,89,145
+"Java Chip Frappuccino Blended","venti","2%","No",460,8,10,350,91,85,145
+"Java Chip Frappuccino Blended","venti","2%","Yes",580,20,55,360,96,88,145
+"Java Chip Frappuccino Blended","venti","Whole","No",480,10,15,340,91,85,145
+"Java Chip Frappuccino Blended","venti","Whole","Yes",600,22,55,360,96,88,145
+"Java Chip Frappuccino Blended","venti","Soy","No",450,8,0,340,89,81,145
+"Java Chip Frappuccino Blended","venti","Soy","Yes",570,19,40,350,93,85,145
+"Java Chip Frappuccino Blended","venti","Coconut","No",440,9,0,340,89,82,145
+"Java Chip Frappuccino Blended","venti","Coconut","Yes",560,20,40,350,94,87,145
+"Iced Caffè Mocha","tall","Nonfat","No",190,0.5,0,160,42,40,75
+"Iced Caffè Mocha","tall","Nonfat","Yes",270,9,30,170,45,42,75
+"Iced Caffè Mocha","tall","2%","No",200,2,5,160,42,40,75
+"Iced Caffè Mocha","tall","2%","Yes",280,10,35,170,44,42,75
+"Iced Caffè Mocha","tall","Whole","No",210,3,10,160,42,40,75
+"Iced Caffè Mocha","tall","Whole","Yes",290,11,35,170,44,42,75
+"Iced Caffè Mocha","tall","Soy","No",190,2,0,160,41,38,75
+"Iced Caffè Mocha","tall","Soy","Yes",270,10,30,160,43,40,75
+"Iced Caffè Mocha","tall","Coconut","No",190,2,0,160,41,39,75
+"Iced Caffè Mocha","tall","Coconut","Yes",270,10,30,160,43,41,75
+"Iced Caffè Mocha","grande","Nonfat","No",270,1,0,230,61,59,110
+"Iced Caffè Mocha","grande","Nonfat","Yes",390,12,45,240,65,61,110
+"Iced Caffè Mocha","grande","2%","No",290,3,10,230,61,58,110
+"Iced Caffè Mocha","grande","2%","Yes",400,14,50,240,65,61,110
+"Iced Caffè Mocha","grande","Whole","No",300,4,10,230,61,58,110
+"Iced Caffè Mocha","grande","Whole","Yes",410,15,50,240,65,61,110
+"Iced Caffè Mocha","grande","Soy","No",280,2.5,0,220,60,56,110
+"Iced Caffè Mocha","grande","Soy","Yes",390,14,40,230,63,58,110
+"Iced Caffè Mocha","grande","Coconut","No",270,3,0,220,60,57,110
+"Iced Caffè Mocha","grande","Coconut","Yes",390,14,40,230,63,60,110
+"Iced Caffè Mocha","venti","Nonfat","No",360,1,5,300,81,77,140
+"Iced Caffè Mocha","venti","Nonfat","Yes",480,12,45,320,84,80,140
+"Iced Caffè Mocha","venti","2%","No",390,4,10,310,81,77,140
+"Iced Caffè Mocha","venti","2%","Yes",500,15,55,320,84,80,140
+"Iced Caffè Mocha","venti","Whole","No",400,6,15,310,81,77,140
+"Iced Caffè Mocha","venti","Whole","Yes",520,17,55,320,84,80,140
+"Iced Caffè Mocha","venti","Soy","No",370,3.5,0,300,79,74,140
+"Iced Caffè Mocha","venti","Soy","Yes",490,15,40,310,82,76,140
+"Iced Caffè Mocha","venti","Coconut","No",360,4,0,300,79,75,140
+"Iced Caffè Mocha","venti","Coconut","Yes",470,15,40,310,82,78,140
+"Caffè Vanilla Frappuccino Light","tall","Nonfat","No",140,0.1,0,150,31,30,65
+"Caffè Vanilla Frappuccino Light","grande","Nonfat","No",190,0.1,0,210,43,41,95
+"Caffè Vanilla Frappuccino Light","venti","Nonfat","No",250,0.2,5,280,58,55,125
+"Caramel Frappuccino Light","tall","Nonfat","No",100,0.1,0,140,23,23,65
+"Caramel Frappuccino Light","grande","Nonfat","No",150,0.1,0,200,33,32,90
+"Caramel Frappuccino Light","venti","Nonfat","No",200,0.1,5,270,44,43,120
+"Coffee Frappuccino Light","tall","Nonfat","No",90,0.1,0,160,2,19,70
+"Coffee Frappuccino Light","grande","Nonfat","No",120,0.1,0,210,26,26,95
+"Coffee Frappuccino Light","venti","Nonfat","No",160,0.1,5,270,34,33,120
+"Espresso Frappuccino Light","tall","Nonfat","No",80,0,0,130,17,16,125
+"Espresso Frappuccino Light","grande","Nonfat","No",120,0.1,0,190,26,24,155
+"Espresso Frappuccino Light","venti","Nonfat","No",160,0.1,0,170,35,34,150
+"Java Chip Light Frappuccino","tall","Nonfat","No",160,3,0,170,30,27,75
+"Java Chip Light Frappuccino","grande","Nonfat","No",230,4,0,250,43,39,110
+"Java Chip Light Frappuccino","venti","Nonfat","No",300,5,5,330,58,52,140
+"Mocha Light Frappuccino","tall","Nonfat","No",120,0.5,0,150,24,23,70
+"Mocha Light Frappuccino","grande","Nonfat","No",160,1,0,200,33,30,95
+"Mocha Light Frappuccino","venti","Nonfat","No",220,1,5,290,46,42,130
+"Blended Strawberry Lemonade","tall","None","No",160,0.1,0,120,40,39,0
+"Blended Strawberry Lemonade","grande","None","No",200,0.1,0,160,52,50,0
+"Blended Strawberry Lemonade","venti","None","No",280,0.1,0,210,71,69,0
+"Chai Crème Frappuccino Blended","tall","Nonfat","No",140,0.1,0,150,33,32,20
+"Chai Crème Frappuccino Blended","tall","Nonfat","Yes",230,8,30,160,35,34,20
+"Chai Crème Frappuccino Blended","tall","2%","No",160,2,10,160,32,32,20
+"Chai Crème Frappuccino Blended","tall","2%","Yes",240,10,40,170,35,34,20
+"Chai Crème Frappuccino Blended","tall","Whole","No",170,3.5,10,150,32,32,20
+"Chai Crème Frappuccino Blended","tall","Whole","Yes",250,11,40,160,35,34,20
+"Chai Crème Frappuccino Blended","tall","Soy","No",150,1.5,0,150,31,29,20
+"Chai Crème Frappuccino Blended","tall","Soy","Yes",230,10,30,160,33,31,20
+"Chai Crème Frappuccino Blended","tall","Coconut","No",140,2,0,150,31,30,20
+"Chai Crème Frappuccino Blended","tall","Coconut","Yes",220,10,30,160,33,32,20
+"Chai Crème Frappuccino Blended","grande","Nonfat","No",210,0.1,5,210,49,48,40
+"Chai Crème Frappuccino Blended","grande","Nonfat","Yes",330,11,45,220,53,50,40
+"Chai Crème Frappuccino Blended","grande","2%","No",230,2.5,10,220,49,48,40
+"Chai Crème Frappuccino Blended","grande","2%","Yes",350,14,50,230,52,50,40
+"Chai Crème Frappuccino Blended","grande","Whole","No",250,4,15,210,49,48,40
+"Chai Crème Frappuccino Blended","grande","Whole","Yes",360,15,55,220,52,50,40
+"Chai Crème Frappuccino Blended","grande","Soy","No",220,2,0,210,47,45,40
+"Chai Crème Frappuccino Blended","grande","Soy","Yes",340,13,40,220,50,47,40
+"Chai Crème Frappuccino Blended","grande","Coconut","No",210,2.5,0,210,47,46,40
+"Chai Crème Frappuccino Blended","grande","Coconut","Yes",330,14,40,220,50,49,40
+"Chai Crème Frappuccino Blended","venti","Nonfat","No",290,0.2,5,310,66,65,40
+"Chai Crème Frappuccino Blended","venti","Nonfat","Yes",410,11,45,320,70,67,45
+"Chai Crème Frappuccino Blended","venti","2%","No",330,4,15,320,66,65,45
+"Chai Crème Frappuccino Blended","venti","2%","Yes",440,15,60,330,69,67,45
+"Chai Crème Frappuccino Blended","venti","Whole","No",350,7,20,310,66,65,45
+"Chai Crème Frappuccino Blended","venti","Whole","Yes",460,18,60,320,69,67,45
+"Chai Crème Frappuccino Blended","venti","Soy","No",300,3.5,0,300,63,60,45
+"Chai Crème Frappuccino Blended","venti","Soy","Yes",420,14,40,310,66,62,45
+"Chai Crème Frappuccino Blended","venti","Coconut","No",290,4.5,0,300,63,61,45
+"Chai Crème Frappuccino Blended","venti","Coconut","Yes",400,16,40,310,66,64,45
+"Double Chocolaty Chip Crème Frappuccino Blended","tall","Nonfat","No",200,3,0,190,39,36,10
+"Double Chocolaty Chip Crème Frappuccino Blended","tall","Nonfat","Yes",280,11,30,200,42,39,10
+"Double Chocolaty Chip Crème Frappuccino Blended","tall","2%","No",210,5,10,190,38,35,10
+"Double Chocolaty Chip Crème Frappuccino Blended","tall","2%","Yes",300,13,40,200,42,38,10
+"Double Chocolaty Chip Crème Frappuccino Blended","tall","Whole","No",220,6,10,190,38,35,10
+"Double Chocolaty Chip Crème Frappuccino Blended","tall","Whole","Yes",310,14,40,200,42,38,10
+"Double Chocolaty Chip Crème Frappuccino Blended","tall","Soy","No",200,4.5,0,180,37,33,10
+"Double Chocolaty Chip Crème Frappuccino Blended","tall","Soy","Yes",290,13,30,190,40,36,10
+"Double Chocolaty Chip Crème Frappuccino Blended","tall","Coconut","No",200,5,0,190,37,34,10
+"Double Chocolaty Chip Crème Frappuccino Blended","tall","Coconut","Yes",280,13,30,190,41,37,10
+"Double Chocolaty Chip Crème Frappuccino Blended","grande","Nonfat","No",270,4,5,250,53,49,15
+"Double Chocolaty Chip Crème Frappuccino Blended","grande","Nonfat","Yes",390,15,45,270,58,52,15
+"Double Chocolaty Chip Crème Frappuccino Blended","grande","2%","No",290,7,10,260,53,49,15
+"Double Chocolaty Chip Crème Frappuccino Blended","grande","2%","Yes",410,18,50,270,57,52,15
+"Double Chocolaty Chip Crème Frappuccino Blended","grande","Whole","No",300,8,15,260,53,49,15
+"Double Chocolaty Chip Crème Frappuccino Blended","grande","Whole","Yes",420,20,55,270,57,52,15
+"Double Chocolaty Chip Crème Frappuccino Blended","grande","Soy","No",270,6,0,250,51,45,15
+"Double Chocolaty Chip Crème Frappuccino Blended","grande","Soy","Yes",400,17,40,260,55,49,15
+"Double Chocolaty Chip Crème Frappuccino Blended","grande","Coconut","No",270,7,0,250,51,46,15
+"Double Chocolaty Chip Crème Frappuccino Blended","grande","Coconut","Yes",390,18,40,260,56,51,15
+"Double Chocolaty Chip Crème Frappuccino Blended","venti","Nonfat","No",360,6,5,350,71,66,20
+"Double Chocolaty Chip Crème Frappuccino Blended","venti","Nonfat","Yes",480,17,45,360,76,69,20
+"Double Chocolaty Chip Crème Frappuccino Blended","venti","2%","No",390,9,15,360,71,65,20
+"Double Chocolaty Chip Crème Frappuccino Blended","venti","2%","Yes",510,21,55,370,76,69,20
+"Double Chocolaty Chip Crème Frappuccino Blended","venti","Whole","No",410,12,20,350,71,65,20
+"Double Chocolaty Chip Crème Frappuccino Blended","venti","Whole","Yes",540,23,60,360,76,69,20
+"Double Chocolaty Chip Crème Frappuccino Blended","venti","Soy","No",370,8,0,340,68,61,20
+"Double Chocolaty Chip Crème Frappuccino Blended","venti","Soy","Yes",490,20,40,350,72,64,20
+"Double Chocolaty Chip Crème Frappuccino Blended","venti","Coconut","No",360,10,0,340,68,62,20
+"Double Chocolaty Chip Crème Frappuccino Blended","venti","Coconut","Yes",480,21,40,350,73,67,20
+"Green Tea Crème Frappuccino Blended","tall","Nonfat","No",210,0.2,0,170,47,46,50
+"Green Tea Crème Frappuccino Blended","tall","Nonfat","Yes",290,8,30,170,50,48,50
+"Green Tea Crème Frappuccino Blended","tall","2%","No",230,2.5,10,170,47,46,50
+"Green Tea Crème Frappuccino Blended","tall","2%","Yes",310,10,40,180,50,48,50
+"Green Tea Crème Frappuccino Blended","tall","Whole","No",240,3.5,10,170,47,46,50
+"Green Tea Crème Frappuccino Blended","tall","Whole","Yes",320,12,40,180,50,48,50
+"Green Tea Crème Frappuccino Blended","tall","Soy","No",220,2,0,160,46,44,50
+"Green Tea Crème Frappuccino Blended","tall","Soy","Yes",300,10,30,170,48,45,50
+"Green Tea Crème Frappuccino Blended","tall","Coconut","No",210,2.5,0,160,46,44,50
+"Green Tea Crème Frappuccino Blended","tall","Coconut","Yes",290,10,30,170,48,47,50
+"Green Tea Crème Frappuccino Blended","grande","Nonfat","No",280,0.3,5,220,64,63,70
+"Green Tea Crème Frappuccino Blended","grande","Nonfat","Yes",400,11,45,230,68,65,70
+"Green Tea Crème Frappuccino Blended","grande","2%","No",300,3,10,230,64,63,70
+"Green Tea Crème Frappuccino Blended","grande","2%","Yes",420,17,50,240,68,65,70
+"Green Tea Crème Frappuccino Blended","grande","Whole","No",320,4.5,15,220,64,63,70
+"Green Tea Crème Frappuccino Blended","grande","Whole","Yes",430,16,55,230,68,65,70
+"Green Tea Crème Frappuccino Blended","grande","Soy","No",290,2.5,0,220,62,60,70
+"Green Tea Crème Frappuccino Blended","grande","Soy","Yes",400,13,40,230,65,62,70
+"Green Tea Crème Frappuccino Blended","grande","Coconut","No",280,3,0,220,62,61,70
+"Green Tea Crème Frappuccino Blended","grande","Coconut","Yes",390,14,40,230,66,64,70
+"Green Tea Crème Frappuccino Blended","venti","Nonfat","No",390,0.4,5,310,88,86,95
+"Green Tea Crème Frappuccino Blended","venti","Nonfat","Yes",500,12,45,320,91,88,95
+"Green Tea Crème Frappuccino Blended","venti","2%","No",420,4,15,320,87,86,95
+"Green Tea Crème Frappuccino Blended","venti","2%","Yes",530,15,55,330,91,88,95
+"Green Tea Crème Frappuccino Blended","venti","Whole","No",440,7,20,310,87,86,95
+"Green Tea Crème Frappuccino Blended","venti","Whole","Yes",550,18,60,320,91,88,95
+"Green Tea Crème Frappuccino Blended","venti","Soy","No",400,3.5,0,300,84,81,95
+"Green Tea Crème Frappuccino Blended","venti","Soy","Yes",510,15,40,310,87,83,95
+"Green Tea Crème Frappuccino Blended","venti","Coconut","No",380,4.5,0,300,85,82,95
+"Green Tea Crème Frappuccino Blended","venti","Coconut","Yes",500,16,40,310,88,85,95
+"Oprah Cinnamon Chai Crème Frappuccino Blended","tall","Nonfat","No",140,0.1,0,135,30,30,20
+"Oprah Cinnamon Chai Crème Frappuccino Blended","tall","Nonfat","Yes",220,8,30,140,33,32,20
+"Oprah Cinnamon Chai Crème Frappuccino Blended","tall","2%","No",150,2,5,140,30,29,20
+"Oprah Cinnamon Chai Crème Frappuccino Blended","tall","2%","Yes",230,10,35,150,33,32,20
+"Oprah Cinnamon Chai Crème Frappuccino Blended","tall","Whole","No",160,3,10,135,30,29,20
+"Oprah Cinnamon Chai Crème Frappuccino Blended","tall","Whole","Yes",240,11,40,140,33,32,20
+"Oprah Cinnamon Chai Crème Frappuccino Blended","tall","Soy","No",140,1.5,0,130,29,27,20
+"Oprah Cinnamon Chai Crème Frappuccino Blended","tall","Soy","Yes",220,9,30,140,31,30,20
+"Oprah Cinnamon Chai Crème Frappuccino Blended","tall","Coconut","No",140,2,0,135,29,28,20
+"Oprah Cinnamon Chai Crème Frappuccino Blended","tall","Coconut","Yes",220,10,30,140,31,30,20
+"Oprah Cinnamon Chai Crème Frappuccino Blended","grande","Nonfat","No",190,0.1,0,180,42,41,25
+"Oprah Cinnamon Chai Crème Frappuccino Blended","grande","Nonfat","Yes",300,11,45,200,45,44,25
+"Oprah Cinnamon Chai Crème Frappuccino Blended","grande","2%","No",200,2,10,190,42,41,25
+"Oprah Cinnamon Chai Crème Frappuccino Blended","grande","2%","Yes",320,13,50,200,45,44,25
+"Oprah Cinnamon Chai Crème Frappuccino Blended","grande","Whole","No",220,3.5,10,180,42,41,25
+"Oprah Cinnamon Chai Crème Frappuccino Blended","grande","Whole","Yes",330,15,50,200,45,44,25
+"Oprah Cinnamon Chai Crème Frappuccino Blended","grande","Soy","No",190,2,0,180,40,38,25
+"Oprah Cinnamon Chai Crème Frappuccino Blended","grande","Soy","Yes",310,13,40,190,43,41,25
+"Oprah Cinnamon Chai Crème Frappuccino Blended","grande","Coconut","No",190,2.5,0,180,40,39,25
+"Oprah Cinnamon Chai Crème Frappuccino Blended","grande","Coconut","Yes",300,14,40,190,43,42,25
+"Oprah Cinnamon Chai Crème Frappuccino Blended","venti","Nonfat","No",260,0.1,5,260,59,58,40
+"Oprah Cinnamon Chai Crème Frappuccino Blended","venti","Nonfat","Yes",380,11,45,270,63,61,40
+"Oprah Cinnamon Chai Crème Frappuccino Blended","venti","2%","No",290,3.5,15,270,59,57,40
+"Oprah Cinnamon Chai Crème Frappuccino Blended","venti","2%","Yes",410,15,55,280,62,61,40
+"Oprah Cinnamon Chai Crème Frappuccino Blended","venti","Whole","No",310,6,15,260,59,57,40
+"Oprah Cinnamon Chai Crème Frappuccino Blended","venti","Whole","Yes",420,17,60,280,62,61,40
+"Oprah Cinnamon Chai Crème Frappuccino Blended","venti","Soy","No",270,2.5,0,260,56,53,40
+"Oprah Cinnamon Chai Crème Frappuccino Blended","venti","Soy","Yes",390,14,40,270,59,56,40
+"Oprah Cinnamon Chai Crème Frappuccino Blended","venti","Coconut","No",270,4,0,260,57,55,40
+"Oprah Cinnamon Chai Crème Frappuccino Blended","venti","Coconut","Yes",380,15,40,270,60,58,40
+"Strawberries & Crème Frappuccino Blended","tall","Nonfat","No",170,0.1,0,140,38,37,0
+"Strawberries & Crème Frappuccino Blended","tall","Nonfat","Yes",250,8,30,150,41,39,0
+"Strawberries & Crème Frappuccino Blended","tall","2%","No",180,2,5,150,38,37,0
+"Strawberries & Crème Frappuccino Blended","tall","2%","Yes",260,10,35,160,40,39,0
+"Strawberries & Crème Frappuccino Blended","tall","Whole","No",190,3,10,140,38,37,0
+"Strawberries & Crème Frappuccino Blended","tall","Whole","Yes",270,11,40,150,40,39,0
+"Strawberries & Crème Frappuccino Blended","tall","Soy","No",170,1.5,0,140,37,35,0
+"Strawberries & Crème Frappuccino Blended","tall","Soy","Yes",250,9,30,150,39,37,0
+"Strawberries & Crème Frappuccino Blended","tall","Coconut","No",170,2,0,140,37,35,0
+"Strawberries & Crème Frappuccino Blended","tall","Coconut","Yes",250,10,30,150,39,38,0
+"Strawberries & Crème Frappuccino Blended","grande","Nonfat","No",230,0.2,0,200,53,52,0
+"Strawberries & Crème Frappuccino Blended","grande","Nonfat","Yes",340,11,45,210,56,54,0
+"Strawberries & Crème Frappuccino Blended","grande","2%","No",250,2.5,10,200,53,51,0
+"Strawberries & Crème Frappuccino Blended","grande","2%","Yes",360,14,50,210,56,54,0
+"Strawberries & Crème Frappuccino Blended","grande","Whole","No",260,4,10,200,53,51,0
+"Strawberries & Crème Frappuccino Blended","grande","Whole","Yes",370,15,55,210,56,54,0
+"Strawberries & Crème Frappuccino Blended","grande","Soy","No",240,2,0,190,51,49,0
+"Strawberries & Crème Frappuccino Blended","grande","Soy","Yes",350,13,40,200,54,51,0
+"Strawberries & Crème Frappuccino Blended","grande","Coconut","No",230,2.5,0,190,51,49,0
+"Strawberries & Crème Frappuccino Blended","grande","Coconut","Yes",340,14,40,200,54,53,0
+"Strawberries & Crème Frappuccino Blended","venti","Nonfat","No",300,0.2,5,270,70,68,0
+"Strawberries & Crème Frappuccino Blended","venti","Nonfat","Yes",420,11,45,280,73,70,0
+"Strawberries & Crème Frappuccino Blended","venti","2%","No",330,3.5,15,280,69,68,0
+"Strawberries & Crème Frappuccino Blended","venti","2%","Yes",450,15,55,290,73,70,0
+"Strawberries & Crème Frappuccino Blended","venti","Whole","No",350,6,15,270,69,68,0
+"Strawberries & Crème Frappuccino Blended","venti","Whole","Yes",460,17,60,280,73,70,0
+"Strawberries & Crème Frappuccino Blended","venti","Soy","No",310,3,0,260,67,63,0
+"Strawberries & Crème Frappuccino Blended","venti","Soy","Yes",430,14,40,270,70,66,0
+"Strawberries & Crème Frappuccino Blended","venti","Coconut","No",300,3.5,0,260,67,65,0
+"Strawberries & Crème Frappuccino Blended","venti","Coconut","Yes",420,15,40,370,70,68,0
+"Vanilla Bean Crème Frappuccino Blended","tall","Nonfat","No",170,0.1,0,160,39,38,0
+"Vanilla Bean Crème Frappuccino Blended","tall","Nonfat","Yes",250,8,30,170,41,40,0
+"Vanilla Bean Crème Frappuccino Blended","tall","2%","No",190,2,10,170,39,38,0
+"Vanilla Bean Crème Frappuccino Blended","tall","2%","Yes",270,10,40,170,41,39,0
+"Vanilla Bean Crème Frappuccino Blended","tall","Whole","No",200,3.5,10,160,39,38,0
+"Vanilla Bean Crème Frappuccino Blended","tall","Whole","Yes",280,11,40,170,41,39,0
+"Vanilla Bean Crème Frappuccino Blended","tall","Soy","No",180,1.5,0,160,37,35,0
+"Vanilla Bean Crème Frappuccino Blended","tall","Soy","Yes",260,10,30,160,39,37,0
+"Vanilla Bean Crème Frappuccino Blended","tall","Coconut","No",170,2.5,0,160,37,36,0
+"Vanilla Bean Crème Frappuccino Blended","tall","Coconut","Yes",250,10,30,160,39,38,0
+"Vanilla Bean Crème Frappuccino Blended","grande","Nonfat","No",240,0.1,8,230,56,55,0
+"Vanilla Bean Crème Frappuccino Blended","grande","Nonfat","Yes",360,11,45,240,60,57,0
+"Vanilla Bean Crème Frappuccino Blended","grande","2%","No",270,3,10,240,56,55,0
+"Vanilla Bean Crème Frappuccino Blended","grande","2%","Yes",380,14,55,250,59,57,0
+"Vanilla Bean Crème Frappuccino Blended","grande","Whole","No",280,4.5,15,230,56,55,0
+"Vanilla Bean Crème Frappuccino Blended","grande","Whole","Yes",400,16,55,240,59,57,0
+"Vanilla Bean Crème Frappuccino Blended","grande","Soy","No",250,2.5,0,220,54,51,0
+"Vanilla Bean Crème Frappuccino Blended","grande","Soy","Yes",370,13,40,230,57,54,0
+"Vanilla Bean Crème Frappuccino Blended","grande","Coconut","No",240,3,0,220,54,52,0
+"Vanilla Bean Crème Frappuccino Blended","grande","Coconut","Yes",360,14,40,240,57,56,0
+"Vanilla Bean Crème Frappuccino Blended","venti","Nonfat","No",320,0.2,5,300,73,71,0
+"Vanilla Bean Crème Frappuccino Blended","venti","Nonfat","Yes",430,11,45,310,76,73,0
+"Vanilla Bean Crème Frappuccino Blended","venti","2%","No",350,4,15,310,73,71,0
+"Vanilla Bean Crème Frappuccino Blended","venti","2%","Yes",460,15,55,320,76,73,0
+"Vanilla Bean Crème Frappuccino Blended","venti","Whole","No",370,7,20,300,73,71,0
+"Vanilla Bean Crème Frappuccino Blended","venti","Whole","Yes",490,18,60,310,76,73,0
+"Vanilla Bean Crème Frappuccino Blended","venti","Soy","No",330,3,0,290,69,66,0
+"Vanilla Bean Crème Frappuccino Blended","venti","Soy","Yes",440,14,40,300,73,68,0
+"Vanilla Bean Crème Frappuccino Blended","venti","Coconut","No",310,4.5,0,290,69,67,0
+"Vanilla Bean Crème Frappuccino Blended","venti","Coconut","Yes",430,15,40,300,73,70,0
+"Caramel Apple Spice","short","None","No",140,0,0,10,35,33,0
+"Caramel Apple Spice","short","None","Yes",210,6,20,20,40,37,0
+"Caramel Apple Spice","tall","None","No",210,0,0,15,53,49,0
+"Caramel Apple Spice","tall","None","Yes",300,7,25,30,59,55,0
+"Caramel Apple Spice","grande","None","No",280,0,0,20,70,65,0
+"Caramel Apple Spice","grande","None","Yes",380,8,30,35,76,71,0
+"Caramel Apple Spice","venti","None","No",360,0,0,25,89,83,0
+"Caramel Apple Spice","venti","None","Yes",450,8,30,40,95,88,0
+"Hot Chocolate","short","Nonfat","No",140,1.5,5,70,26,23,15
+"Hot Chocolate","short","Nonfat","Yes",200,6,20,95,29,24,15
+"Hot Chocolate","short","2%","No",170,4.5,15,80,26,22,15
+"Hot Chocolate","short","2%","Yes",230,10,30,85,28,24,15
+"Hot Chocolate","short","Whole","No",190,7,15,70,26,22,15
+"Hot Chocolate","short","Whole","Yes",250,12,35,80,28,24,15
+"Hot Chocolate","short","Soy","No",150,3.5,0,60,23,18,15
+"Hot Chocolate","short","Soy","No",210,9,20,65,25,20,15
+"Hot Chocolate","short","Coconut","No",140,5,0,70,23,20,15
+"Hot Chocolate","short","Coconut","Yes",200,10,20,75,26,22,15
+"Hot Chocolate","tall","Nonfat","No",210,2,5,110,37,32,20
+"Hot Chocolate","tall","Nonfat","Yes",280,8,30,115,40,34,20
+"Hot Chocolate","tall","2%","No",250,7,20,125,37,32,20
+"Hot Chocolate","tall","2%","Yes",320,13,45,130,39,34,20
+"Hot Chocolate","tall","Whole","No",280,10,25,110,37,32,20
+"Hot Chocolate","tall","Whole","Yes",350,16,50,120,39,34,20
+"Hot Chocolate","tall","Soy","No",220,6,0,95,32,25,20
+"Hot Chocolate","tall","Soy","Yes",290,12,25,100,35,28,20
+"Hot Chocolate","tall","Coconut","No",210,8,0,110,33,28,20
+"Hot Chocolate","tall","Coconut","Yes",280,14,25,115,36,31,20
+"Hot Chocolate","grande","Nonfat","No",270,2.5,5,140,47,41,25
+"Hot Chocolate","grande","Nonfat","Yes",350,10,35,150,51,43,25
+"Hot Chocolate","grande","2%","No",320,9,25,160,47,41,25
+"Hot Chocolate","grande","2%","Yes",400,16,55,170,50,43,25
+"Hot Chocolate","grande","Whole","No",360,13,35,150,47,41,25
+"Hot Chocolate","grande","Whole","Yes",440,20,60,150,50,43,25
+"Hot Chocolate","grande","Soy","No",280,8,0,125,41,32,25
+"Hot Chocolate","grande","Soy","Yes",360,15,25,130,44,35,25
+"Hot Chocolate","grande","Coconut","No",270,10,0,140,42,35,25
+"Hot Chocolate","grande","Coconut","Yes",350,17,25,150,46,38,30
+"Hot Chocolate","venti","Nonfat","No",350,3.5,10,180,63,55,35
+"Hot Chocolate","venti","Nonfat","Yes",430,10,35,190,66,58,35
+"Hot Chocolate","venti","2%","No",420,11,35,200,62,55,35
+"Hot Chocolate","venti","2%","Yes",500,19,60,210,66,57,35
+"Hot Chocolate","venti","Whole","No",470,17,45,190,62,55,35
+"Hot Chocolate","venti","Whole","Yes",550,24,70,190,66,57,35
+"Hot Chocolate","venti","Soy","No",370,9,0,160,55,44,35
+"Hot Chocolate","venti","Soy","Yes",450,17,25,170,58,46,35
+"Hot Chocolate","venti","Coconut","No",360,13,0,180,57,48,35
+"Hot Chocolate","venti","Coconut","Yes",430,20,25,190,60,51,35
+"Lemonade","tall","None","No",80,0,0,0,21,21,0
+"Lemonade","grande","None","No",110,0,0,1,29,21,0
+"Lemonade","venti","None","No",150,0,0,1,41,41,0
+"Skinny Hot Chocolate","short","None","No",80,1,5,85,12,8,0
+"Skinny Hot Chocolate","tall","None","No",130,1.5,5,125,18,13,0
+"Skinny Hot Chocolate","grande","None","No",170,1.5,5,160,24,17,0
+"Skinny Hot Chocolate","venti","None","No",210,2,10,210,30,21,0
+"White Hot Chocolate","short","Nonfat","No",180,3,5,125,31,30,0
+"White Hot Chocolate","short","Nonfat","Yes",230,8,25,130,32,32,0
+"White Hot Chocolate","short","2%","No",210,6,15,135,30,30,0
+"White Hot Chocolate","short","2%","Yes",260,11,35,140,32,31,0
+"White Hot Chocolate","short","Whole","No",220,8,20,125,30,30,0
+"White Hot Chocolate","short","Whole","Yes",280,14,40,130,32,31,0
+"White Hot Chocolate","short","Soy","No",190,5,5,115,27,26,0
+"White Hot Chocolate","short","Soy","No",240,11,20,120,29,27,0
+"White Hot Chocolate","short","Coconut","No",180,7,5,125,28,28,0
+"White Hot Chocolate","short","Coconut","Yes",230,12,20,130,30,29,0
+"White Hot Chocolate","tall","Nonfat","No",270,4.5,10,190,46,46,0
+"White Hot Chocolate","tall","Nonfat","Yes",330,11,30,200,48,47,0
+"White Hot Chocolate","tall","2%","No",310,9,25,200,46,46,0
+"White Hot Chocolate","tall","2%","Yes",370,16,45,210,48,47,0
+"White Hot Chocolate","tall","Whole","No",340,13,30,190,46,46,0
+"White Hot Chocolate","tall","Whole","Yes",400,19,55,200,48,47,0
+"White Hot Chocolate","tall","Soy","No",280,8,5,180,41,39,0
+"White Hot Chocolate","tall","Soy","Yes",340,14,25,180,43,40,0
+"White Hot Chocolate","tall","Coconut","No",270,10,5,190,42,42,0
+"White Hot Chocolate","tall","Coconut","Yes",330,16,25,190,44,43,0
+"White Hot Chocolate","grande","Nonfat","No",360,6,10,250,61,61,0
+"White Hot Chocolate","grande","Nonfat","Yes",430,13,40,260,63,62,0
+"White Hot Chocolate","grande","2%","No",410,12,30,270,61,60,0
+"White Hot Chocolate","grande","2%","Yes",480,19,60,270,63,62,0
+"White Hot Chocolate","grande","Whole","No",450,17,40,250,61,60,0
+"White Hot Chocolate","grande","Whole","Yes",520,24,65,260,63,62,0
+"White Hot Chocolate","grande","Soy","No",370,11,5,230,55,52,0
+"White Hot Chocolate","grande","Soy","Yes",440,18,30,240,57,53,0
+"White Hot Chocolate","grande","Coconut","No",360,13,5,250,56,55,0
+"White Hot Chocolate","grande","Coconut","Yes",430,20,30,250,58,57,0
+"White Hot Chocolate","venti","Nonfat","No",450,7,15,320,77,77,0
+"White Hot Chocolate","venti","Nonfat","Yes",520,14,40,320,79,78,0
+"White Hot Chocolate","venti","2%","No",520,16,40,340,76,76,0
+"White Hot Chocolate","venti","2%","Yes",590,23,65,350,78,78,0
+"White Hot Chocolate","venti","Whole","No",570,21,50,320,76,76,0
+"White Hot Chocolate","venti","Whole","Yes",640,28,75,330,78,78,0
+"White Hot Chocolate","venti","Soy","No",470,14,5,290,69,65,0
+"White Hot Chocolate","venti","Soy","Yes",540,21,30,300,71,67,0
+"White Hot Chocolate","venti","Coconut","No",450,17,5,310,71,69,0
+"White Hot Chocolate","venti","Coconut","Yes",520,24,30,320,73,71,0
