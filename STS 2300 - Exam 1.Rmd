@@ -1,0 +1,179 @@
+---
+title: "STS 2300 - Exam 1"
+author: "Put Your Name Here"
+date: '02/26/2024'
+output:
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+---
+
+During this exam, you are allowed to use your notes and other resources (e.g. our Moodle page, Google). You are **NOT allowed** to discuss the exam with anyone else (including but not limited to classmates, tutors, generative AI tools, online message boards, social media posts, using shared notes with someone else, etc.) until after everyone has completed the exam. Any violation of these rules will be considered a violation of the Elon Honor Code and will be handled as such. Type your name below to acknowledge your acceptance of these rules. If you have *any* questions, please be sure to ask Dr. V to get clarification.
+
+Enter your name in the space below to acknowledge your agreement to these guidelines.
+
+**I, YOUR NAME HERE, have read and understand the rules above. I agree to follow these rules for the exam and accept that not abiding by these rules will be treated as a violation of Elon's Honor Code.**
+
+---
+
+Use this space to load any R libraries that you use in your script. I've added `dplyr` and `rvest` to start.
+
+```{r}
+library(dplyr)
+library(rvest)
+```
+
+---
+
+# Part 0 - Setting Up Your File (9 points total)
+
+1. (3 points) Update the code chunk at the top of this document where packages are loaded to make it so that no extra messages are displayed in that area when you knit your file.
+
+**No answer needed here**
+
+<br>
+
+
+2. (6 points) Briefly explain why we are using the `library()` function in this document but not the `install.packages()` function.
+
+**Answer:**
+
+<br>
+
+
+---
+
+# Part 1 - NC Schools (54 points total)
+
+There is a file called **NC_Schools_Proficiency_Data.csv** right below this exam (or in the Data Files folder on Moodle). It includes information on each school in North Carolina about what percentage of their students were proficient in various subjects. Download the file and put it in the same folder as your .Rmd script for this exam.
+
+<br>
+
+3. (10 points) Use the import dataset option to generate code that will read this data into R and call it `nc_schools`. Include the generated code in the code chunk below. Include code to load packages at the top of the document where `dplyr` was loaded. Give an example of a categorical variable and of a quantitative variable in this data frame.
+
+```{r}
+
+```
+
+**Categorical variable example:**
+
+**Quantitative variable example:**
+
+<br>
+
+
+4. (8 points) Write code to convert the data from wide format to long format. Specifically, the column names for the last four columns should become a variable called `Year` and the values within those columns should become a variable called `Proficiency`. Call your new data frame `nc_schools_long`. (Note: You will need to load the `tidyr` package. Put the code for this with the other packages at the top of the document.)
+
+```{r}
+# Use the code below if you did not get question 3. Otherwise delete it.
+# nc_schools <- read.csv("https://raw.githubusercontent.com/vank-stats/STS2300-Spring2024/main/data/NC_School_Proficiency_Data.csv")
+
+
+```
+
+<br>
+
+
+5. (9 points) Make a new data frame called `abss` that only includes schools in the "Alamance-Burlington Schools" `District` and only includes the "Math Grade 3-8" `Subject`. How many observations are in Alamance county? How many schools does this correspond to? (Hint: There are four years listed for each school)
+
+```{r}
+# Use the code below if you did not get question 4. Otherwise delete it.
+# nc_schools_long <- read.csv("https://raw.githubusercontent.com/vank-stats/STS2300-Spring2024/main/data/NC_School_Proficiency_Long.csv")
+
+
+```
+
+**Number of observations:**
+
+**Number of schools:**
+
+<br>
+
+
+6. (9 points) Calculate the minimum and maximum Proficiency **by School** in the `abss` data frame and sort the summary from highest to lowest maximum proficiency. Use piping in this code. Call your new object `abss_summary`.
+
+```{r}
+
+```
+
+<br>
+
+
+7. (10 points) Use the `kableExtra` package to display the five rows that correspond with the highest maximum proficiencies in `abss_summary`. Make it so that your table does not take up the entire width of the page and so that there is row shading (either alternating rows or when the cursor hovers over them). Additionally, hide the code for this question so that only the table is displayed in your knitted document. Put your code to load kableExtra with the other packages at the top of the document.
+
+```{r}
+
+```
+
+<br>
+
+
+8. (8 points) The data came from this website: https://www.wral.com/story/how-well-did-your-school-do-look-up-2023-test-scores-here/21034752/. Write a sentence below that (i) tells someone where to find the data using an R Markdown link and (ii) uses in-line code to tell them something about one of the data frames you worked with in this section. (Note: For your link, the full URL should not be displayed in the knitted document)
+
+**Sentence:**
+
+<br>
+
+
+---
+
+
+# Part 2 - College Basketball Scoring Leader (37 points total)
+
+9. (7 points) Caitlin Clark recently became the all-time scoring leader in NCAA Division 1 women's basketball. Use the url below to scrape the Wikipedia page of the top 25 players all-time. Call your object `top_scorers`. (Note: The table you want is the fourth one on the page)
+
+```{r}
+url <- "https://en.wikipedia.org/wiki/List_of_NCAA_Division_I_women%27s_basketball_career_scoring_leaders"
+
+```
+
+<br>
+
+
+10. (6 points) Use your `top_scorers` object to explain the difference between a data frame, a scalar, and a vector. Give examples of each.
+
+**Answer:**
+
+<br>
+
+
+11. (8 points) Update `top_scorers` to rename the following columns:
+
+  - `Gamesplayed` to `Gs`
+  - `Free throws made` to `FTs`
+  - `Pos.` to `Position`
+
+```{r}
+# Use the code below if you did not get question 9. Otherwise delete it.
+# top_scorers <- read.csv("https://raw.githubusercontent.com/vank-stats/STS2300-Spring2024/main/data/Womens_Bball_Scoring_Leaders.csv")
+
+
+```
+
+<br>
+
+
+12. (8 points) Add a variable to the `top_scorers` object called `FTPG` that is calculated by taking `FTs` divided by `Gs`. Calculate the 90th percentile of `FTPG` and report the answer below.
+
+```{r}
+
+```
+
+**90th percentile:**
+
+<br>
+
+
+13. (8 points) Create tables displaying both the number of players in the data who play each position (`Position` variable) and the proportion of players in the data. Which position is most common for players on this list?
+
+```{r}
+
+```
+
+**Answer:**
+
+<br>
