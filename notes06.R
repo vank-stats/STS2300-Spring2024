@@ -25,6 +25,8 @@ ggplot(fastfood, aes(x = SecPerOrder,
 lm(PctWithErrors ~ SecPerOrder, 
    data = fastfood)
 
+# This will produce an error because the first argument of lm() isn't the data
+
 fastfood %>%
   lm(PctWithErrors ~ SecPerOrder)
 
@@ -40,5 +42,32 @@ fastfood %>%
 fastfood.lm <- lm(PctWithErrors ~ SecPerOrder, 
                   data = fastfood)
 
+# For 300 and 500 seconds per order
+
 predict(fastfood.lm, 
-        newdata = data.frame(SecPerOrder = 500))
+        newdata = data.frame(SecPerOrder = c(300, 500)))
+
+# For 0, 100, 200, 300, ..., 1000 seconds per order
+
+predict(fastfood.lm, 
+        newdata = data.frame(SecPerOrder = seq(0, 1000, 100)))
+
+# For every x value in your data
+
+predict(fastfood.lm)
+fastfood$SecPerOrder
+
+
+# Example graph to illustrate R^2
+
+ggplot(fastfood, aes(x = SecPerOrder, 
+                     y = PctWithErrors)) +
+  geom_point() +
+  labs(x = "Average Seconds Per Drive-Thru Order",
+       y = "Percentage of Orders with Errors",
+       title = "Fast Food Drive Thru Accuracy") +
+  theme_classic() +
+  geom_smooth(method = "lm",
+              se = FALSE) +
+  geom_hline(yintercept = mean(fastfood$PctWithErrors),
+             color = "red")
