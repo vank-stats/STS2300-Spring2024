@@ -74,3 +74,33 @@ ggplot(cars) +
 # Use summary() to see R^2 value (more on this later)
 
 summary(cars.lm)
+
+
+
+# Backwards selection example
+
+# Start with 6 explanatory variables
+
+Cars2015 %>%
+  lm(HwyMPG ~ Length + Width + Height + Weight + Acc030 + Acc060, data = .) %>%
+  summary()
+
+# Remove Acc030 (p-value of 0.36)
+
+Cars2015 %>%
+  lm(HwyMPG ~ Length + Width + Height + Weight + Acc060, data = .) %>%
+  summary()
+
+# Remove Width (p-value of 0.32)
+
+Cars2015 %>%
+  lm(HwyMPG ~ Length + Height + Weight + Acc060, data = .) %>%
+  summary()
+
+# Possibly remove Height (p-value of 0.086)
+#   This could depend on the cutoff we chose at the start (0.05 or 0.10)
+#   Or we could compare Adjusted R-squared for this and the previous model
+
+Cars2015 %>%
+  lm(HwyMPG ~ Length + Weight + Acc060, data = .) %>%
+  summary()
