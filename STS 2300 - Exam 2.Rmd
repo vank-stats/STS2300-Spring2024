@@ -1,0 +1,220 @@
+---
+title: "STS 2300 - Exam 2"
+author: "Put Your Name Here"
+date: '03/20/2024'
+output:
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+---
+
+During this exam, you are allowed to use your notes and other resources (e.g. our Moodle page, Google). You are **NOT allowed** to discuss the exam with anyone else (including but not limited to classmates, tutors, generative AI tools, online message boards, social media posts, using shared notes with someone else, etc.) until after everyone has completed the exam. Any violation of these rules will be considered a violation of the Elon Honor Code and will be handled as such. Type your name below to acknowledge your acceptance of these rules. If you have *any* questions, please be sure to ask Dr. V to get clarification.
+
+Enter your name in the space below to acknowledge your agreement to these guidelines.
+
+**I, YOUR NAME HERE, have read and understand the rules above. I agree to follow these rules for the exam and accept that not abiding by these rules will be treated as a violation of Elon's Honor Code.**
+
+---
+
+Use this space to load any R libraries that you use in your script. I've added `ggplot2`, `patchwork`, and `dplyr` to start.
+
+```{r, message = FALSE}
+library(ggplot2)
+library(dplyr)
+library(patchwork)
+```
+
+---
+
+# Data for this exam
+
+This exam is using data from [a study](https://www.pnas.org/doi/10.1073/pnas.2209123120) on the relationship between sleep and academic performance. The code below will read the data into R and create two new variables. The original data includes five different studies on the same topic, but we will just look at one of those (Study 2). I have removed variables that are not used on this exam.
+
+```{r}
+sleep <- read.csv("https://raw.githubusercontent.com/vank-stats/STS2300-Spring2024/main/data/sleep_gpa_studies.csv") %>%
+  mutate(sleep_hrs = TotalSleepTime / 60,
+         gender = ifelse(demo_gender == 0, 
+                         "female", 
+                         "male")) %>%
+  filter(study == 2) %>%
+  select(midpoint_sleep, daytime_sleep:term_units, sleep_hrs, gender)
+```
+
+Below is information about each of the variables remaining in the data set:
+
+  - `midpoint_sleep` - measure of how late students went to sleep
+  - `daytime_sleep` - average minutes of sleep during the day
+  - `cum_gpa` - cumulative gpa before current semester
+  - `term_gpa` - gpa earned during the semester studied
+  - `term_units` - number of credits taken during current semester
+  - `sleep_hrs` - average hours of sleep per night
+  - `gender` - recorded by the researchers as a binary (male or female)
+
+<br>
+
+**Note about answering questions on this exam**: Remember that you can receive partial credit on almost every question. If there is something where you are unable to calculate a value to use in an interpretation, you should make up a number (and tell me that's what you're doing) and then interpret your made up number. This way you can still demonstrate that you know how to write an interpretation even if you can't find the number during the exam.
+
+---
+
+# Part One - Visualizing Study Data (37 points total)
+
+I have included a picture with three graphs that were created using the `sleep` data frame. Use these for the questions in this section.
+
+1. (10 points) Recreate graph A to the best of your ability. Pay special attention to the following:
+
+  - color of the bars (gold) and their outlines (black)
+  - the placement of the bins on the graph
+  - the values displayed on the x-axis
+  - graph theme (this is a pre-made theme and not one you need to customize)
+  - axis labels and title
+
+```{r}
+
+```
+
+<br>
+
+
+2. (12 points) Recreate graph B to the best of your ability. Pay special attention to the following:
+
+  - color of boxes (by gender) and their outlines (white)
+  - specified colors for each gender (lightgreen and lightblue)
+  - there is no legend
+  - graph theme (this is a pre-made theme and not one you need to customize)
+  - axis labels and title
+
+```{r}
+
+```
+
+<br>
+
+
+3. (12 points) Recreate graph C to the best of your ability. Pay special attention to the following:
+
+  - there are separate panels for female and male students
+  - graph includes points and a regression line
+  - points have been made slightly larger and transparent
+  - graph theme (this is a pre-made theme and not one you need to customize)
+  - axis labels, title, and caption with your own name
+  
+```{r}
+
+```
+
+<br>
+
+
+4. (3 points) Put your three graphs together into a single image (as shown in the included picture).
+
+```{r}
+
+```
+
+<br>
+
+
+---
+
+# Part Two - Regression (48 points total)
+
+5. (10 points) Use R to generate a multiple linear regression line that predicts `term_gpa` using each of the variables below. Would you recommend removing any variables from this model? If yes, explain which one(s) you would choose to remove *first* and why. (Note: You do not need to actually remove any variable(s) yet. That will come in the next question.)
+
+  - `sleep_hrs` - average hours of sleep per night
+  - `daytime_sleep` - average minutes of sleep during the day
+  - `cum_gpa` - cumulative gpa before current semester
+  - `midpoint_sleep` - measure of how late students went to sleep
+  - `term_units` - number of credits taken during current semester
+
+```{r}
+
+```
+
+**Explanation:** 
+
+<br>
+
+
+6. (10 points) Remove variables from your model until you have an appropriate final model. Write the equation for your final model below and justify why you stopped at this model.
+
+```{r}
+
+```
+
+$$\widehat{response} = ...$$
+
+**Explanation:** 
+
+<br>
+
+
+7. (10 points) Write an interpretation of the y-intercept for your final model from the previous question. Make sure your interpretation is in context of this specific example. Then explain whether this would be an extrapolation and what that means for your interpretation.
+
+**Interpretation:**
+
+**Extrapolation answer:**
+
+<br>
+
+
+8. (6 points) Choose one of the slopes from your final model and write an interpretation of it in context of this example.
+
+**Interpretation:**
+
+<br>
+
+
+9. (8 points) Identify the coefficient of determination ($R^2$) for your final model and write a sentence interpreting it in context of this example.
+
+**$R^2$ =**
+
+**Interpretation:**
+
+<br>
+
+
+10. (4 points) Use your final model to predict the `term_gpa` for someone who: 
+
+  - sleeps an average of 6.5 hours per night, 
+  - sleeps 30 minutes during the day, 
+  - has a cumulative gpa of 2.8, 
+  - has a midpoint_sleep value of 400, 
+  - is taking 15 credits. 
+  
+(Note: If a term listed above is not part of your final model, you can ignore it.)
+
+```{r}
+
+```
+
+**Prediction:**
+
+<br>
+
+
+
+---
+
+# Part Three - Short Answer (15 points total)
+
+11. (5 points) When trying to decide which explanatory variables to include in our model, why is it not a good idea to just choose the model with the highest $R^2$ value? For example, consider what would happen if this was how we chose our best model.
+
+**Answer:**
+
+<br>
+
+
+12. (5 points) When producing graphs with the `ggplot2` package, how do we decide when to put an argument like `fill` inside of the `aes()` function versus outside of it? (Note: It may help to provide an example as part of your explanation)
+
+**Answer:**
+
+<br>
+
+
+13. (5 points) We saw two different ways of making bar graphs in class. How do we know if we should use `geom_col()` vs. `geom_bar()`? Give an example of a situation where we would use each.
+
+**Answer:**
