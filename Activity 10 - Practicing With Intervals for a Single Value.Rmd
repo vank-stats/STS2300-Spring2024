@@ -23,6 +23,8 @@ library(dplyr)
 
 # Part 1 - Dog identifying COVID-19 samples correctly
 
+For this activity, we'll look at a study where researchers trained a dog to smell COVID-19 virus. If you're interested, you can read more about it (and watch a video) [here](https://nerdist.com/article/dogs-sniff-out-covid/).
+
 1. I've created a data frame using the data mentioned in the article. For now, we will just focus on how well the dog was able to identify cases that were positive for COVID-19. We will compare this to cases that were negative for COVID-19 in Activity 11. Use the code below to read the data into R. Then calculate the sample proportion that the dog correctly identified.
 
 ```{r}
