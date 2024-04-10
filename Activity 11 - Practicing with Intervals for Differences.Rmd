@@ -119,28 +119,26 @@ set.seed(92520)
 ---
 
 
-# Part 2 - COVID-19 Identifying Dog (Revisited)
+# Part 2 - Airbnb Discrimination
 
-In Activity 10, we analyzed some data from a dog who was trained to detect COVID-19 by smell. However, we only considered the times when the dog was presented with a sample that contained COVID-19. The actual experiment included cases with and without COVID-19. Below is code to read in the full data.
+The code below will read a data frame into R from a study on potential discrimination by Airbnb hosts. In the experiment, researchers sent requests to Airbnb hosts asking to stay at their properties. The only difference on each request was the name that was used. Researchers chose names that were predominantly associated with certain genders and races (determined in a separate study) and randomly assigned a name to each request. They then recorded whether or not the host gave a positive response indicating the person could stay there. 
+
+Our goal will be to determine the difference in proportion of positive responses given by hosts who received a request from a predominantly Black name versus a predominantly white name.
 
 ```{r}
-covid_dog <- data.frame(ID = c(rep("positive", 157), rep("negative", 792),
-                               rep("positive", 33), rep("negative", 30)),
-                        actual = c(rep("positive", 157), rep("negative", 792),
-                                   rep("negative", 33), rep("positive", 30))) %>%
-  mutate(correct = factor(ID == actual))
+airbnb <- read.csv("https://raw.githubusercontent.com/vank-stats/STS2300-Spring2024/main/data/airbnb.csv")
 ```
 
 <br>
 
 
-9. Make a bar graph (using `geom_bar()`) to compare the proportion of cases that the dog correctly identifies among those with and without COVID-19. To do this, you will map `actual` (our two groups) to the x axis and `correct` to the fill argument. Use `position = "fill"` inside `geom_bar()` to display proportions instead of counts. What does the graph show about how well the dog does in each type of sample?
+9. Make a bar graph (using `geom_bar()`) to compare the proportion of positive responses between the two races used in this study. Briefly describe what the graph shows about our sample. (Note: You want your variable that creates groups (`Race`) to go on the x-axis and your variable of interest (`Response`) to map to fill. Use the `position = "fill"` argument inside `geom_bar()` to get a graph comparing proportions.)
 
 ```{r}
 
 ```
 
-**Answer:**
+**Description of graph:**
 
 <br>
 
@@ -185,21 +183,14 @@ covid_dog <- data.frame(ID = c(rep("positive", 157), rep("negative", 792),
 <br>
 
 
-14. Interpret your interval in context of this example. Your sentence should be understandable by someone reading a news story abou this dog. (Note: When talking about a difference in percentages, you will use the phrase "percentage points")
+14. Interpret your interval in context of this example. Your sentence should be understandable by someone reading a news story about this experiment. (Note: When talking about a difference in percentages, you will use the phrase "percentage points")
 
 **Interpretation:**
 
 <br>
 
 
-15. The article mentioned the dog might be able to be used at airports or other locations to determine if someone has COVID-19. What might we need to consider about the applicability of these results outside the context of the experiment? (Note: It might help to read how the dog was tested or to watch the short video)
-
-**Answer:**
-
-<br>
-
-
-16. As practice, calculate a 95% theory-based interval based on this data.
+15. As practice, calculate a 95% theory-based interval based on this data.
 
 ```{r}
 
