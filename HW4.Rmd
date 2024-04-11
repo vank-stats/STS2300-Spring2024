@@ -113,7 +113,7 @@ $\bar{x}$ =
 ---
 
 
-# Part 2 - Is College Worth It? (15 points)
+# Part 2 - NC Sports Betting (15 points)
 
 The Elon Poll [recently surveyed](https://eloncdn.blob.core.windows.net/eu3/sites/819/2023/06/Elon-Poll-Report-061423.pdf) registered voters in North Carolina on a variety of topics. One of those topics was whether sports betting should be legal in North Carolina. The code below creates a data frame with the results of their survey.
 
