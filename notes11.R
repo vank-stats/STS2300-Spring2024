@@ -82,3 +82,22 @@ adelie_boot <- adelie %>%
   generate(reps = 1000, type = "bootstrap") %>%
   calculate(stat = "diff in means", order = c("male", "female"))
 visualize(adelie_boot)
+
+
+# Calculate a 90% CI using the SE method
+
+adelie_point_est <- adelie %>%
+  specify(formula = bill_length_mm ~ sex) %>%
+  calculate(stat = "diff in means", order = c("male", "female"))
+
+get_ci(adelie_boot,
+       type = "se",
+       point_estimate = adelie_point_est,
+       level = 0.9)
+
+
+# Calculate a 90% theory-based CI
+
+t.test(bill_length_mm ~ sex, 
+       data = adelie, 
+       conf.level = 0.9)
