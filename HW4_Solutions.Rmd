@@ -1,0 +1,239 @@
+---
+title: "Homework 4 (50 points total)"
+author: "Solutions"
+date: 'Due: 4/12/2024'
+output:
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+---
+
+**As a reminder, there are often multiple ways to accomplish the tasks described in your homework assignments. If you use methods that we did not discuss in class (e.g. notes, activities, questions during class), you should explain where you learned your method and how it is accomplishing the task. For example, it's possible to subset data using "square bracket" notation. If I did this, I would say how I learned about it and why the code I used successfully subsets the data in the way I want**
+
+---
+
+Use the code chunk below to load any R libraries that you use in your script. I've added `dplyr` and `infer` as a start.
+
+```{r, message = FALSE}
+library(dplyr)
+library(infer)
+library(ggplot2) # added for geom_vline() function
+```
+
+---
+
+# Part 1 - NC School Math Proficiency (24 points total)
+
+Let's revisit the data on testing proficiency in North Carolina schools. The code below will read the data into R and subset it to only include math scores from 2023.
+
+```{r}
+nc_math <- read.csv("https://raw.githubusercontent.com/vank-stats/STS2300-Spring2024/main/data/NC_School_Proficiency_Long.csv") %>%
+  filter(Subject == "Math Grade 3-8",
+         Year == "2023%")
+```
+
+<br>
+
+1. (2 points) Run the code below to take a random sample of 100 NC schools. Calculate the mean proficiency score of the schools in your sample.
+
+```{r}
+set.seed(23004)
+school_sample <- sample_n(nc_math, size = 100)
+school_xbar <- mean(school_sample$Proficiency)
+```
+
+$\bar{x}$ = `r school_xbar`
+
+<br>
+
+
+2. (4 points) Use the `infer` package to generate a bootstrap distribution of 1,000 sample means based on this data. Create a histogram of your distribution with your estimate from the previous question added to your graph. Don't forget to set a seed before your bootstrap distribution.
+
+```{r}
+set.seed(244)
+school_boot <- school_sample %>%
+  specify(Proficiency ~ NULL) %>%
+  generate(reps = 1000, type = "bootstrap") %>%
+  calculate(stat = "mean")
+
+visualize(school_boot) +
+  geom_vline(xintercept = 50.55, color = "magenta3", linewidth = 2)
+```
+
+<br>
+
+
+3. (3 points) Describe important characteristics of your bootstrap distribution (e.g. shape, center, spread). Include why your estimate from the previous question shows up where it does on your graph.
+
+**Answer:** The graph is roughly bell-shaped and includes sample means from around 45 to 55. The sample mean from our original sample (50.55) shows up in the center of the graph. It makes sense for our sample mean to show up in the center because the bootstrap distribution is obtained by sampling (with replacement) from our original sample.
+
+<br>
+
+
+4. (2 points) Generate a 95% confidence interval based on your bootstrap distribution using either the percentile method or the standard error method. Report the interval below using proper notation.
+
+```{r}
+# Percentile method
+
+school_boot %>%
+  get_ci(level = 0.95, type = "percentile")
+
+# SE method
+
+school_boot %>%
+  get_ci(level = 0.95, type = "se", point_estimate = school_xbar)
+```
+
+**95% CI (percentile method):** (46.7, 54.4)
+
+**95% CI (SE method):** (46.6, 54.5)
+
+<br>
+
+
+5. (3 points) Explain how your chosen method creates confidence intervals as applied to this example. (Note: This does not mean to tell me what functions you used. Instead, you should briefly describe the process that creates the interval)
+
+**Explanation (percentile method):** The percentile method creates a 95% confidence interval by selecting the middle 95% of all of the values in the bootstrap distribution. In other words, the 2.5% with the lowest sample means and the 2.5% with the highest sample means are removed. What's left is the range for our confidence interval.
+
+**Explanation (SE method):** The SE method mimics a theory-based interval but replaces the formula for the standard error with the standard deviation of the bootstrap distribution. In other words, we take our estimate (sample mean) and then both add and subtract a critical value times the standard deviation of the bootstrap distribution. The two values we get from this become our confidence interval endpoints.
+
+<br>
+
+
+6. (4 points) Write a sentence interpreting your confidence interval in context of this example.
+
+**Interpretation:** We are 95% confident that the population mean Math Grade 3-8 proficiency score of North Carolina schools was between 46.7 and 54.4 percent in 2023.
+
+<br>
+
+
+7. (4 points) Suppose you shared your interval with state officials who decided the confidence interval was too wide for them to effectively reach conclusions. What are two things they could do to reduce the width of your confidence interval? For each option, what is a downside to using this option to reduce the CI width?
+
+**Option 1 (include downside):** They could reduce the confidence level (e.g. to 90%). However, this would mean they would have less confidence that the population mean was actually inside the interval.
+
+**Option 2 (include downside):** The could gather more data to increase the sample size. However, this often takes more time / money to do.
+
+<br>
+
+
+8. (2 points) Calculate a **99%** confidence interval for this example using a theory-based method.
+
+```{r}
+t.test(x = school_sample$Proficiency)
+```
+
+**99% CI:** (46.6, 54.5)
+
+<br>
+
+---
+
+
+# Part 2 - Sports Betting in NC (15 points)
+
+The Elon Poll [recently surveyed](https://eloncdn.blob.core.windows.net/eu3/sites/819/2023/06/Elon-Poll-Report-061423.pdf) registered voters in North Carolina on a variety of topics. One of those topics was whether sports betting should be legal in North Carolina. The code below creates a data frame with the results of their survey.
+
+```{r}
+betting <- data.frame(opinion = c(rep("support", 839),
+                                  rep("oppose", 427)))
+```
+
+<br>
+
+
+9. (2 points) Calculate an estimate for the proportion of registered voters in North Carolina who support making sports betting legal.
+
+```{r}
+betting_phat <- mean(betting$opinion == "support")
+```
+
+**Estimate:** $\hat{p} = 0.663$
+
+<br>
+
+
+10. (4 points) Generate a bootstrap resampling distribution of 1,000 sample proportions. Make a histogram of these values. Describe what this specific graph shows (include things like center, spread, and shape).
+
+```{r}
+set.seed(1041000)
+betting_boot <- betting %>%
+  specify(opinion ~ NULL, success = "support") %>%
+  generate(reps = 1000, type = "bootstrap") %>%
+  calculate(stat = "prop")
+visualize(betting_boot) +
+  geom_vline(xintercept = betting_phat, color = "tan2", linewidth = 2)
+```
+
+**Description:** The graph is roughly bell-shaped and includes sample proportions from around 0.62 to 0.70. The graph is centered on our sample proportion of 0.663.
+
+<br>
+
+
+11. (3 points) Calculate a 90% confidence interval for a proportion. Use the opposite method that you used in Part 1 (e.g. if you used percentile method there, use standard error method here, and vice versa). Report the interval below.
+
+```{r}
+get_ci(betting_boot,
+       level = 0.9,
+       type = "percentile")
+```
+
+**90% Confidence interval:** (0.641, 0.685)
+
+<br>
+
+
+12. (4 points) Write a sentence interpreting your confidence interval in context of this example.
+
+**Interpretation (option 1):** We are 90% that the population proportion of registered voters in North Carolina who support making sports betting legal is between 0.641 and 0.685. 
+
+**Interpretation (option 2):** We are 90% confident that between 64.1% and 68.5% of registered voters in North Carolina support making sports betting legal.
+
+<br>
+
+
+13. (2 points) Calculate a **90%** confidence interval for this example using a theory-based method.
+
+```{r}
+prop.test(x = 839,
+          n = 839 + 427,
+          conf.level = 0.9)
+```
+
+**90% CI:** (0.640, 0.685)
+
+<br>
+
+---
+
+# Part 3 - Short Answer (8 points)
+
+14. (4 points) Are the theory-based intervals you calculated similar to the bootstrap intervals for the two examples above? Explain why or why not. (Hint: Consider how the intervals are constructed and which conditions have or have not been met.)
+
+**Explanation:** For both examples, they are very similar. This is likely because theory-based conditions have been met and the intervals are constructed in similar ways. In the first example (CI for a mean), we took a random sample and our sample size of 100 means it isn't that necessary for our data to come from a normal distribution. The bootstrap distribution is bell-shaped which suggests our sampling distribution also would be. In the second example (CI for a proportion), we have well over 5 successes and failures in our sample. The Elon Poll is also likely to use good random sampling practices.
+
+<br>
+
+
+15. (4 points) Explain the difference between a bootstrap distribution and a sampling distribution. Which quantity should be at the center of each and why?
+
+**Answer:** A sampling distribution is a distribution of a statistic over all possible random samples (of a certain size) from the population. Because the samples come from the population, the sampling distribution will be centered on our parameter of interest. A bootstrap distribution is a distribution of a statistic over many samples from our original sample (taken with replacement). Because the samples come from our original sample, the bootstrap distribution will be centered on the original samples statistic of interest.
+
+<br>
+
+
+---
+
+# Reflection (3 points)
+
+
+16. Answer one (or both) of the following questions. Be sure to give a complete answer to the question(s) you choose (i.e. more than just a sentence or two).
+
+  - What's something from Unit 3 that isn't entirely clear to you and what would it take to help solidify your understanding of the concept?
+  - What's an example of how you've used confidence intervals in the past or envision using them in the future? What type of interval(s) did/will you use? What was/is the goal of using them in that context?
+  
+**Answer:**
+
