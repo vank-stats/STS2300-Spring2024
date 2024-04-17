@@ -1,0 +1,232 @@
+---
+title: "STS 2300 - Exam 3"
+author: "Put Your Name Here"
+date: '04/17/2024'
+output:
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+---
+
+During this exam, you are allowed to use your notes and other resources (e.g. our Moodle page, Google). You are **NOT allowed** to discuss the exam with anyone else (including but not limited to classmates, tutors, generative AI tools, online message boards, social media posts, using shared notes with someone else, etc.) until after everyone has completed the exam. Any violation of these rules will be considered a violation of the Elon Honor Code and will be handled as such. Type your name below to acknowledge your acceptance of these rules. If you have *any* questions, please be sure to ask Dr. V to get clarification.
+
+Enter your name in the space below to acknowledge your agreement to these guidelines.
+
+**I, YOUR NAME HERE, have read and understand the rules above. I agree to follow these rules for the exam and accept that not abiding by these rules will be treated as a violation of Elon's Honor Code.**
+
+---
+
+Use this space to load any R libraries that you use in your script.
+
+```{r, message = FALSE}
+library(ggplot2)
+library(dplyr)
+library(infer)
+```
+
+---
+
+**Note about answering questions on this exam**: Remember that you can receive partial credit on almost every question. If there is something where you are unable to calculate a value to use in an interpretation, you should make up a number (and tell me that's what you're doing) and then interpret your made up number. This way you can still demonstrate that you know how to write an interpretation even if you can't find the number during the exam.
+
+---
+
+# Part One - Rinsing after brushing? (46 points total)
+
+The code below will read a data set into R from a study on the effects of rinsing out your mouth after brushing your teeth. The study enrolled 15-16 year olds from England and tracked their tooth brushing habits. In the study, some people had a cup of water that they used to rinse their mouth after brushing their teeth while other people did not rinse their mouth after brushing. The researchers measured the number of dental issues each group had (e.g. cavities).
+
+```{r}
+brushing <- read.csv("https://raw.githubusercontent.com/vank-stats/STS2720-Fall2021/main/brushing_rinse.csv")
+```
+
+<br>
+
+
+1. (7 points) Create an appropriate graph to compare the distributions in the number of dental issues between the two groups. Describe what the graph shows us about these distributions.
+
+```{r}
+
+```
+
+**Description of graphs:**
+
+<br>
+
+
+2. (6 points) Calculate the sample mean difference between the two groups. What does it mean that your estimate is either positive or negative?
+
+```{r}
+
+```
+
+**Answer:**
+
+<br>
+
+
+3. (4 points) What is our parameter of interest for this example? Write it in words in context of this example.
+
+**Parameter of interest:**
+
+<br>
+
+
+4. (5 points) Generate an appropriate bootstrap distribution for this example. Display a histogram of your bootstrap distribution. (Note: Don't forget to set a seed)
+
+```{r}
+
+```
+
+<br>
+
+
+5. (7 points) Describe your bootstrap distribution (e.g. center, spread, and shape). Then discuss how you anticipate the sampling distribution would be similar/different from the bootstrap distribution for this example.
+
+**Description of bootstrap:**
+
+**Comparison to sampling distribution:**
+
+<br>
+
+
+6. (7 points) Use your bootstrap distribution to create a 90% confidence interval for a difference in population means using the SE method. Describe how an SE method interval is created. (Note: This does not mean what R code you are using. You should describe the process that creates the specific values.)
+
+```{r}
+
+```
+
+**90% CI:**
+
+**How SE method CIs are created:**
+
+<br>
+
+
+7. (6 points) Write an interpretation of your interval in context of this example.
+
+**Interpretation:**
+
+<br>
+
+
+8. (4 points) Calculate a 90% theory-based confidence interval for this example.
+
+```{r}
+
+```
+
+**90% Theory-Based CI:**
+
+<br>
+
+
+---
+
+# Part Two - Parking Tickets in New York (40 points total)
+
+One afternoon in July 2022, researchers walked along six routes in Manhattan and recorded every car they found that was parking too close to a fire hydrant. Later, they reviewed a database of parking tickets and found that 7 of the 138 violations they found resulted in a parking ticket. Below is code to read the data into R.
+
+```{r}
+parking <- data.frame(tickets = c(rep("yes", 7),
+                                  rep("no", 138 - 7)))
+```
+
+
+9. (4 points) Describe the parameter of interest related to this study.
+
+**Parameter of interest:**
+
+<br>
+
+
+10. (8 points) Generate a bootstrap distribution for the proportion of cars with tickets. Include a graph of the distribution and describe the graph (e.g. center, spread, and shape).
+
+```{r}
+
+```
+
+**Description:**
+
+<br>
+
+
+11. (5 points) Suppose the researchers went out on a different day and collected a new sample. How would a new bootstrap distribution based on that sample compare to the one you got above? What would be similar and what would be different?
+
+**Answer:**
+
+<br>
+
+
+12. (7 points) Calculate a 95% confidence interval using the percentile method. Describe how a percentile method interval is created. (Note: This does not mean what R code you are using. You should describe the process that creates the specific values.)
+
+```{r}
+
+```
+
+**95% CI:**
+
+**Explanation:**
+
+<br>
+
+
+13. (6 points) Write an interpretation of your interval in context of this example.
+
+**Interpretation:**
+
+<br>
+
+
+14. (6 points) Would it be reasonable to use a theory-based interval for this example? Why or why not?
+
+**Answer:**
+
+<br>
+
+
+15. (4 points) Regardless of your answer above, write code to produce a 95% theory-based interval.
+
+```{r}
+
+```
+
+**95% Theory-based CI:**
+
+<br>
+
+
+---
+
+# Part Three - Short Answer Conceptual Questions (14 points total)
+
+16. (9 points) In unit 3, we discussed four types of distributions: (A) bootstrap distributions, (B) distributions of populations, (C) distributions of samples, and (D) sampling distributions. For each statement below, which distribution(s) does it apply to? You can just include the letter(s) for each answer.
+
+a. This distribution displays values from individual observations.
+
+**Answer:**
+
+<br>
+
+
+b. This distribution can be created without having access to the full population.
+
+**Answer:**
+
+<br>
+
+
+c. This distribution is centered on a parameter.
+
+**Answer:**
+
+<br>
+
+
+17. (5 points) Suppose you are creating a confidence interval for a population proportion. For which of the three methods we learned (SE, percentile, theory-based) is it impossible to get negative numbers in your interval? Explain why this is the case for that method.
+
+**Answer:**
+
+<br>
