@@ -6,7 +6,7 @@ output:
   html_document: default
 ---
 
-```{r setup, include=FALSE}
+```{r setup, echo = FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
@@ -53,7 +53,7 @@ $\bar{x}$ = `r school_xbar`
 
 2. (4 points) Use the `infer` package to generate a bootstrap distribution of 1,000 sample means based on this data. Create a histogram of your distribution with your estimate from the previous question added to your graph. Don't forget to set a seed before your bootstrap distribution.
 
-```{r}
+```{r, out.width = "50%", fig.align = "center"}
 set.seed(244)
 school_boot <- school_sample %>%
   specify(Proficiency ~ NULL) %>%
@@ -123,7 +123,7 @@ school_boot %>%
 8. (2 points) Calculate a **99%** confidence interval for this example using a theory-based method.
 
 ```{r}
-t.test(x = school_sample$Proficiency)
+t.test(x = school_sample$Proficiency, conf.level = 0.99)
 ```
 
 **99% CI:** (46.6, 54.5)
@@ -158,7 +158,7 @@ betting_phat <- mean(betting$opinion == "support")
 
 10. (4 points) Generate a bootstrap resampling distribution of 1,000 sample proportions. Make a histogram of these values. Describe what this specific graph shows (include things like center, spread, and shape).
 
-```{r}
+```{r, out.width = "50%", fig.align = "center"}
 set.seed(1041000)
 betting_boot <- betting %>%
   specify(opinion ~ NULL, success = "support") %>%
@@ -188,7 +188,7 @@ get_ci(betting_boot,
 
 12. (4 points) Write a sentence interpreting your confidence interval in context of this example.
 
-**Interpretation (option 1):** We are 90% that the population proportion of registered voters in North Carolina who support making sports betting legal is between 0.641 and 0.685. 
+**Interpretation (option 1):** We are 90% confident that the population proportion of registered voters in North Carolina who support making sports betting legal is between 0.641 and 0.685. 
 
 **Interpretation (option 2):** We are 90% confident that between 64.1% and 68.5% of registered voters in North Carolina support making sports betting legal.
 
