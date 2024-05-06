@@ -1,0 +1,260 @@
+---
+title: "Homework 5 (50 points total)"
+author: "Solutions"
+date: 'Due: 5/4/2024'
+output:
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+---
+
+**As a reminder, there are often multiple ways to accomplish the tasks described in your homework assignments. If you use methods that we did not discuss in class (e.g. notes, activities, questions during class), you should explain where you learned your method and how it is accomplishing the task. For example, it's possible to subset data using "square bracket" notation. If I did this, I would say how I learned about it and why the code I used successfully subsets the data in the way I want**
+
+---
+
+Use the code chunk below to load any R libraries that you use in your script. I've added `dplyr` and `infer` as a start.
+
+```{r, message = FALSE}
+library(dplyr)
+library(infer)
+library(ggplot2)
+```
+
+---
+
+# Part 1 - Body-Worn Camera Audit (24 points total)
+
+The city of Durham  [conducted an audit](https://www.wral.com/audit-durham-police-officers-routinely-disregard-policies-on-bodycam-videos/19885934/) of body-worn camera practices among their police officers. Part of the audit asked officers if they categorize the videos from their body-worn cameras. Suppose we're interested in testing whether more than half of all Durham police officers **never categorize** their videos.
+
+
+1. (4 points) Set up an appropriate null and alternative hypothesis for this example. Define the parameters used in your hypotheses.
+
+**$H_0$:** p = 0.5
+
+**$H_a$:** p > 0.5
+
+**Define parameter(s):** p is the population proportion of Durham police officers who never categorize their videos
+
+<br>
+
+
+2. (3 points) Below is code to read in the data from the audit. Create a graph of the data and calculate an appropriate summary statistic for this example. Report the statistic in the text below.
+
+```{r, out.width = "50%", fig.align = "center"}
+audit <- data.frame(frequency = c(rep("Never", 153), 
+                                  rep("Sometimes", 81)))
+
+ggplot(audit, aes(x = frequency, fill = frequency)) +
+  geom_bar(show.legend = FALSE)
+
+audit_phat <- audit %>%
+  specify(frequency ~ NULL, success = "Never") %>%
+  calculate(stat = "prop")
+
+audit_phat
+```
+
+**Statistic:** $\hat{p} = 0.654$
+
+<br>
+
+
+3. (3 points) Generate a null distribution for your hypotheses. Graph it with the p-value shaded on the graph. (Note: Remember to set a seed)
+
+```{r, out.width = "50%", fig.align = "center"}
+set.seed(6633)
+
+audit_null <- audit %>%
+  specify(frequency ~ NULL, success = "Never") %>%
+  hypothesize(null = "point", p = 0.5) %>%
+  generate(reps = 1000, type = "draw") %>%
+  calculate(stat = "prop")
+
+visualize(audit_null) + 
+  shade_pvalue(obs_stat = audit_phat, 
+               direction = "right")
+```
+
+<br>
+
+
+4. (4 points) Calculate the p-value for this example based on your null distribution and write a sentence explaining what it means in context of this example. (Note: This is not your interpretation yet.)
+
+```{r}
+audit_null %>% 
+  get_pvalue(obs_stat = audit_phat, 
+             direction = "right")
+```
+
+**p-value =** 0
+
+**Interpretation:** The p-value is approximately zero. In 1,000 simulations from a world where half of all Durham police officers never categorize their videos, we didn't see a single sample that had a sample proportion as high as our observed data (0.654).
+
+<br>
+
+
+5. (4 points) Write a conclusion for this hypothesis test in context of the problem (use $\alpha = 0.01$).
+
+**Conclusion:** The p-value < 0.01, so we will reject the null hypothesis. There is very strong evidence to conclude that more than half of Durham police officers never categorize their body-worn camera videos.
+
+<br>
+
+
+6. (3 points) Write code to do a theory-based hypothesis test using this data. Report your p-value below.
+
+```{r}
+prop.test(x = 153,
+          n = 153 + 81,
+          p = 0.5,
+          alternative = "greater")
+```
+
+**p-value =** 0.00000173
+
+<br>
+
+
+7. (3 points) Identify a potential data collection issue that we might consider when applying the results of our hypothesis tests.
+
+**Answer:** Officers were asked if they categorized their videos (rather than checking to see if they had done it). Some officers may say they sometimes categorize their videos to sound better. Additionally, it's not clear if this data is a random sample of all Durham police officers. If it's not, we should be wary of conducting a hypothesis test (or using it for confidence intervals).
+
+<br>
+
+
+
+---
+
+
+# Part 2 - Seeding Clouds (22 points total)
+
+The data below comes from an experiment where researchers wanted to see whether they could increase rainfall by injecting silver iodide into clouds. They identified 52 days that were suitable for rain. On half of the days, clouds were seeded with silver iodide, and on half they weren't. They measured the amount of rain that fell in a specified area on each day.
+
+The data frame consists of two variables, `rain` (amount of rainfall in acre-feet) and `Treatment` ("Seeded" or "Unseeded").
+
+
+<br>
+
+
+8. (4 points) Set up an appropriate null and alternative hypothesis for this example. Define the parameters used in your hypotheses.
+
+**$H_0$:** $\mu_1 - \mu_2 = 0$
+
+**$H_a$:** $\mu_1 - \mu_2 > 0$
+
+**Define parameters:** $\mu_i$ is the population mean rainfall (with group 1 being clouds seeded with silver iodide and group 2 being unseeded clouds)
+
+<br>
+
+
+9. (4 points) Below is code to read in the data from the experiment. Create an appropriate graph for this data and an appropriate statistic. Report the statistic below and comment on what you notice about the data in your graph.
+
+```{r, out.width = "50%", fig.align = "center"}
+rain <- read.csv("https://raw.githubusercontent.com/vank-stats/STS2300-Spring2024/main/data/rainfall.csv")
+
+rain_diff <- rain %>%
+  specify(rain ~ treatment) %>%
+  calculate(stat = "diff in means", order = c("SEEDED", "UNSEEDED"))
+
+rain_diff
+
+ggplot(rain, aes(x = rain, y = treatment)) +
+  geom_boxplot(outlier.shape = NA) +
+  geom_jitter(width = 0, 
+              height = 0.1, 
+              alpha = 0.5, 
+              size = 2)
+```
+
+**Statistic:** $\bar{x}_1 - \bar{x}_2 = 277.4$ acre-feet
+
+**Graph comments:** Both graphs are skewed right, but the SEEDED clouds tend to have higher rainfall values. When clouds are UNSEEDED, there are many values very close to zero. This seems to be less common when clouds are SEEDED.
+
+<br>
+
+
+10. (4 points) Generate a null distribution for your hypotheses. Graph it with the p-value shaded on the graph. Write a couple sentences about how your sample estimate relates to the null distribution.
+
+```{r, out.width = "50%", fig.align = "center"}
+set.seed(15710)
+
+rain_null <- rain %>%
+  specify(rain ~ treatment) %>%
+  hypothesize(null = "independence") %>%
+  generate(reps = 1000, type = "permute") %>%
+  calculate(stat = "diff in means", order = c("SEEDED", "UNSEEDED"))
+
+visualize(rain_null) +
+  shade_pvalue(obs_stat = rain_diff, direction = "right")
+```
+
+**Answer:** The sample difference in means shows up near the right hand side of the null distribution. There are only a small number of simulations (when the null is true) that result in differences in sample means favoring SEEDED clouds at least as much as our observed data.
+
+<br>
+
+
+11. (4 points) Calculate the p-value and write a sentence explaining what it means in context of this example. (Hint: Is your data compatible with the null hypothesis?)
+
+```{r}
+rain_null %>%
+  get_pvalue(obs_stat = rain_diff, direction = "right")
+```
+
+**Answer:** In a world where seeding clouds with silver iodide has no impact on the population mean rainfall, we would see a random sample with a difference in sample means this large (277.4 acre-feet higher for seeded clouds) around 1.6% of the time. This suggests the observed data would be pretty unusual in a world where our null hypothesis were true and the data is not very compatible with what the null hypothesis claimed (that $\mu_1 = \mu_2$).
+
+<br>
+
+
+12. (4 points) Write a conclusion for this hypothesis test in context of the problem (use $\alpha = 0.05$).
+
+**Conclusion:** Since the p-value is less than 0.05, I will reject the null hypothesis. There is sufficient evidence to conclude the population mean rainfall is higher for clouds that have been seeded with silver iodide than those that haven't.
+
+<br>
+
+
+13. (2 points) This example is sometimes used in STS 2120 as a case where a theory-based test is not appropriate (without transforming the data). Which condition is likely violated for a theory-based test and how? Consider what you've seen so far in this example. (Hint: Remember confidence intervals and hypothesis tests have the same conditions.)
+
+**Answer:** The theory-based test would require us to assume that we either have data that comes from normally distributed populations *or* to have "large enough" sample sizes. In this case, our samples are pretty right skewed (unlikely to come from a normal population) and we have under 30 observations in each group, so that assumption would not be reasonable for a theory-based test.
+
+<br>
+
+
+
+---
+
+
+
+# Reflection (4 Points) - Answers will vary
+
+14. Since this is the last homework assignment of the year, I wanted to get a little feedback from you all. Answer **at least two** of the following questions:
+
+a. What's your favorite thing you've learned, done, or experienced in our class this semester? What makes that thing stand out?
+
+**Answer:**
+
+<br>
+
+
+b. This is the first year this course has been offered. What's something you think should be added, increased, or decreased in future semesters? Why would you make that change?
+
+**Answer:**
+
+<br>
+
+
+c. What's something from the class that you think you'll still remember one year from now? Why do you expect that thing to stay with you?
+
+**Answer:**
+
+<br>
+
+
+d. What advice would you give to a student taking the course next year?
+
+**Answer:**
+
+<br>
+
