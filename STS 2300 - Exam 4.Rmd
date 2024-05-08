@@ -1,0 +1,239 @@
+---
+title: "STS 2300 - Exam 4"
+author: "Put Your Name Here"
+date: '05/08/2024'
+output:
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+---
+
+During this exam, you are allowed to use your notes and other resources (e.g. our Moodle page, Google). You are **NOT allowed** to discuss the exam with anyone else (including but not limited to classmates, tutors, generative AI tools, online message boards, social media posts, using shared notes with someone else, etc.) until after everyone has completed the exam. Any violation of these rules will be considered a violation of the Elon Honor Code and will be handled as such. Type your name below to acknowledge your acceptance of these rules. If you have *any* questions, please be sure to ask Dr. V to get clarification.
+
+Enter your name in the space below to acknowledge your agreement to these guidelines.
+
+**I, YOUR NAME HERE, have read and understand the rules above. I agree to follow these rules for the exam and accept that not abiding by these rules will be treated as a violation of Elon's Honor Code.**
+
+---
+
+Use this space to load any R libraries that you use in your script.
+
+```{r, message = FALSE}
+library(ggplot2)
+library(dplyr)
+library(infer)
+```
+
+---
+
+**Note about answering questions on this exam**: Remember that you can receive partial credit on almost every question. If there is something where you are unable to calculate a value to use in an interpretation, you should make up a number (and tell me that's what you're doing) and then interpret your made up number. This way you can still demonstrate that you know how to write an interpretation even if you can't find the number during the exam.
+
+---
+
+# Part One - Lake Mary Nell (45 points total)
+
+During the 2020-2021 academic year, students in ENS 1130 gathered data from Lake Mary Nell on campus. They would periodically go out and measure the pH of the water, the temperature at different depths, the cloudiness of the water, and more. Suppose that we are interested in testing whether the overall average `pH` of the water is different between the two semesters (`Semester`). Below is code to read the data into R. (Note: We will not use most of the variables present in this data.)
+
+```{r}
+marynell <- read.csv("https://raw.githubusercontent.com/vank-stats/STS2300-Spring2024/main/data/LakeMaryNell.csv") %>%
+  filter(!is.na(Semester), !is.na(pH))
+```
+
+<br>
+
+
+1. (6 points) Write out an appropriate null and alternative hypothesis for the question of interest described above. Define the parameter(s) used in your hypotheses.
+
+**$H_0:$**
+
+**$H_a:$**
+
+**Define parameter(s):**
+
+<br>
+
+
+2. (6 points) Create an appropriate graph to summarize the data. Describe what it shows in relation to our question of interest.
+
+```{r}
+
+```
+
+**Description:**
+
+<br>
+
+
+3. (4 points) Calculate a statistic to summarize this data in relation to our question of interest. Report the statistic below.
+
+```{r}
+
+```
+
+**Statistic:**
+
+<br>
+
+
+4. (6 points) Generate an appropriate null distribution with your p-value shaded on the graph. Remember to set a seed.
+
+```{r}
+
+```
+
+<br>
+
+
+5. (4 points) Why is it important to set a seed before we generate our null distribution?
+
+**Answer:**
+
+<br>
+
+
+6. (7 points) Calculate the p-value and write a sentence explaining what it means in context of this specific example.
+
+```{r}
+
+```
+
+**P-value interpretation:**
+
+<br>
+
+
+7. (6 points) Write a conclusion for your test in context of this example. (Use $\alpha = 0.10$)
+
+**Conclusion:**
+
+<br>
+
+
+8. (6 points) Suppose that students in ENS 1130 gathered this same type of data every year for 10 years. If the average pH level of the water never changed from fall to spring (i.e. null is true), do you think we would reject the null using data from any of those 10 years? Why or why not?
+
+**Answer:**
+
+<br>
+
+
+---
+
+# Part Two - Financial Concerns (40 points total)
+
+A [recent poll conducted by Gallup](https://news.gallup.com/poll/644690/americans-continue-name-inflation-top-financial-problem.aspx) asked people what their top financial concern was. The previous year, 35% of people had said inflation was their top concern. Suppose we want to test if the proportion who currently rate inflation as their top concern is higher than 35%. The code below will read the data into R.
+
+```{r}
+concerns <- data.frame(top = c(rep("inflation", 410), rep("other", 591)))
+```
+
+<br>
+
+
+9. (6 points) Write out an appropriate null and alternative hypothesis for the question of interest described above. Define the parameter(s) used in your hypotheses.
+
+**$H_0:$**
+
+**$H_a:$**
+
+**Define parameter(s):**
+
+<br>
+
+
+10. (4 points) Calculate a statistic to summarize this data in relation to our question of interest. Report the statistic below.
+
+```{r}
+
+```
+
+**Statistic:**
+
+<br>
+
+
+11. (6 points) Generate an appropriate null distribution with your p-value shaded on the graph. Remember to set a seed.
+
+```{r}
+
+```
+
+<br>
+
+
+12. (7 points) Calculate the p-value and write a sentence explaining what it means in context of this specific example.
+
+```{r}
+
+```
+
+**P-value interpretation:**
+
+<br>
+
+
+13. (6 points) Write a conclusion for your test in context of this example. (Use $\alpha = 0.01$)
+
+**Conclusion:**
+
+<br>
+
+
+14. (6 points) Write code to carry out a theory-based test for these hypotheses. Report the p-value for this test below.
+
+```{r}
+
+```
+
+**p-value =**
+
+<br>
+
+
+15. (5 points) Assume that Gallup contacted a random sample of Americans. Consider the assumptions for this type of test. Are these assumptions reasonably met for the theory-based test above?
+
+**Answer:**
+
+<br>
+
+
+---
+
+# Part Three - Chi-Squared Tests (15 points total)
+
+The code below reads in data from project 2 and includes only 18 - 22 year olds. Suppose we are interested in comparing e-cigarette usage (`ECIGSTATUS`) with how often people worry (`WORFREQ`).
+
+```{r}
+project2_data <- read.csv("https://raw.githubusercontent.com/vank-stats/STS2300-Spring2024/main/data/project2_data.csv") %>%
+  filter(AGE > 17, AGE < 23) %>%
+  select(ECIGSTATUS, WORFREQ)
+```
+
+
+15. (6 points) Set up appropriate hypotheses for a Chi-Squared test related to these variables.
+
+**$H_0:$**
+
+**$H_a:$**
+
+<br>
+
+
+16. (3 points) Calculate a p-value for this test using either a simulation-based approach (`infer` package) or a theory-based approach.
+
+```{r}
+
+```
+
+**p-value =**
+
+<br>
+
+
+17. (6 points) Write a conclusion for your hypothesis test in context of this example.
+
+**Conclusion:**
+
